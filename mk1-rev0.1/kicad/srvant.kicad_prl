@@ -3,13 +3,15 @@
     "active_layer": 0,
     "active_layer_preset": "",
     "auto_track_width": true,
-    "hidden_nets": [],
+    "hidden_nets": [
+      "/+1.2v_CPU"
+    ],
     "high_contrast_mode": 1,
     "net_color_mode": 1,
     "opacity": {
-      "pads": 1.0,
-      "tracks": 1.0,
-      "vias": 1.0,
+      "pads": 0.8999999761581421,
+      "tracks": 0.9800000190734863,
+      "vias": 0.8999999761581421,
       "zones": 1.0
     },
     "ratsnest_display_mode": 0,
@@ -61,9 +63,10 @@
       33,
       34,
       35,
-      36
+      36,
+      37
     ],
-    "visible_layers": "803f3ff_fffffff9",
+    "visible_layers": "803f3ff_ffffffff",
     "zone_display_mode": 0
   },
   "meta": {

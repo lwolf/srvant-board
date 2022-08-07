@@ -1,0 +1,16 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid e8409582-7c0c-4913-ac20-aa467c270345)
+
+  (paper "A2")
+
+  (title_block
+    (title "srvant. BMC prototype")
+    (date "2022-05-31")
+    (rev "0.2")
+  )
+
+  (lib_symbols
+  )
+
+)

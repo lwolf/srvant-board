@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name "a13_func_edited")(type "KiCad")(uri "${KIPRJMOD}/components/srvant.components/a13_func_edited.kicad_sym")(options "")(descr ""))
+  (lib (name "axp209_func")(type "KiCad")(uri "${KIPRJMOD}/components/srvant.components/axp209_func.kicad_sym")(options "")(descr ""))
+  (lib (name "IS43TR16128C-125KBLI")(type "KiCad")(uri "${KIPRJMOD}/components/srvant.components/IS43TR16128C-125KBLI.kicad_sym")(options "")(descr ""))
+  (lib (name "ul_spi_flash_S25FL256SAGNFI010")(type "KiCad")(uri "${KIPRJMOD}/components/srvant.components/ul_spi_flash_S25FL256SAGNFI010.kicad_sym")(options "")(descr ""))
+  (lib (name "bsz086p03ns")(type "KiCad")(uri "${KIPRJMOD}/components/srvant.components/bsz086p03ns.kicad_sym")(options "")(descr ""))
+  (lib (name "CM4IO")(type "KiCad")(uri "${KIPRJMOD}/components/cm4.components/CM4IO.kicad_sym")(options "")(descr ""))
+)
