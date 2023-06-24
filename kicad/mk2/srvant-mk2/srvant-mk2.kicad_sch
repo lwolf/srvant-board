@@ -1,0 +1,19 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 1859a578-b791-4142-bdf4-fda494df1146)
+
+  (paper "A3")
+
+  (title_block
+    (title "srvant mk2")
+    (rev "0.1")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
