@@ -1,0 +1,15 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 6fad0f66-8921-4f5c-93a5-e5165a7bd032)
+
+  (paper "A3")
+
+  (title_block
+    (title "srvant mk2")
+    (rev "0.1")
+  )
+
+  (lib_symbols
+  )
+
+)

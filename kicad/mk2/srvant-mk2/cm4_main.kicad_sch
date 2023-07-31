@@ -1,0 +1,49 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 9305b109-723b-46ca-97b5-ee7591919571)
+
+  (paper "A3")
+
+  (title_block
+    (title "srvant mk2")
+    (rev "0.1")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 229.87 54.61) (size 72.39 82.55) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 5816e81d-55cb-47d6-914e-ed3118b5e71f)
+    (property "Sheetname" "CM4_GPIO" (at 229.87 53.8984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "cm4_gpio.kicad_sch" (at 229.87 137.7446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "srvant-mk2"
+        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987" (page "7"))
+      )
+    )
+  )
+
+  (sheet (at 104.14 54.61) (size 63.5 81.28) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid af163592-1f22-458e-8735-b4a2b37ef539)
+    (property "Sheetname" "cm4-high-speed" (at 104.14 53.8984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "cm4_high_speed.kicad_sch" (at 104.14 136.4746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "srvant-mk2"
+        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987" (page "6"))
+      )
+    )
+  )
+)

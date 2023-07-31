@@ -13,6 +13,82 @@
   )
 
 
+  (sheet (at 262.89 95.25) (size 68.58 96.52) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 75d0860a-7ab5-4d7d-b96d-9266ebc33987)
+    (property "Sheetname" "cm4" (at 262.89 94.5384 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "cm4_main.kicad_sch" (at 262.89 192.3546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "srvant-mk2"
+        (path "/1859a578-b791-4142-bdf4-fda494df1146" (page "5"))
+      )
+    )
+  )
+
+  (sheet (at 54.61 111.76) (size 55.88 55.88) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid a3ddce6d-c94c-48a5-9fee-a70fbee730bf)
+    (property "Sheetname" "bmc" (at 54.61 111.0484 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "bmc.kicad_sch" (at 54.61 168.2246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "srvant-mk2"
+        (path "/1859a578-b791-4142-bdf4-fda494df1146" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 147.32 107.95) (size 57.15 76.2) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid bc16d2ae-d2a7-4a09-ade4-a7ea87e92493)
+    (property "Sheetname" "interconnection" (at 147.32 107.2384 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "interconnection.kicad_sch" (at 147.32 184.7346 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "srvant-mk2"
+        (path "/1859a578-b791-4142-bdf4-fda494df1146" (page "4"))
+      )
+    )
+  )
+
+  (sheet (at 41.91 25.4) (size 69.85 38.1) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid c300a602-5caa-44c4-bd60-e0bac469451e)
+    (property "Sheetname" "power" (at 41.91 24.6884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "power.kicad_sch" (at 41.91 64.0846 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (pin "+BATT" output (at 111.76 39.37 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 9d4d854e-6f73-49c0-980e-0db5cd6afc34)
+    )
+    (pin "+5v" output (at 111.76 41.91 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid adce8889-c423-44ea-90b7-13e3b9264866)
+    )
+    (instances
+      (project "srvant-mk2"
+        (path "/1859a578-b791-4142-bdf4-fda494df1146" (page "2"))
+      )
+    )
+  )
+
   (sheet_instances
     (path "/" (page "1"))
   )
