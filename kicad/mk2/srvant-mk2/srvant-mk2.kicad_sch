@@ -13,6 +13,23 @@
   )
 
 
+  (wire (pts (xy 105.41 85.09) (xy 132.08 85.09))
+    (stroke (width 0) (type default))
+    (uuid 2baa79ad-a84d-4efd-9a63-15ead6360f10)
+  )
+  (wire (pts (xy 132.08 41.91) (xy 111.76 41.91))
+    (stroke (width 0) (type default))
+    (uuid be0228a7-4db0-4363-b83d-e4e4eb60869a)
+  )
+  (wire (pts (xy 132.08 85.09) (xy 132.08 41.91))
+    (stroke (width 0) (type default))
+    (uuid cbb32fcc-dd7b-4d19-9aa0-47e1459671f1)
+  )
+  (wire (pts (xy 105.41 111.76) (xy 105.41 85.09))
+    (stroke (width 0) (type default))
+    (uuid f284cd12-79e2-41df-af98-b80a0ac77fc8)
+  )
+
   (sheet (at 262.89 95.25) (size 68.58 96.52) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
@@ -39,6 +56,10 @@
     )
     (property "Sheetfile" "bmc.kicad_sch" (at 54.61 168.2246 0)
       (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (pin "+5v" input (at 105.41 111.76 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 26152cba-7d17-4e21-a4ab-141b8f68a0fa)
     )
     (instances
       (project "srvant-mk2"
