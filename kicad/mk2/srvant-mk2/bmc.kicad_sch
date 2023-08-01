@@ -5585,6 +5585,14 @@
     (stroke (width 0) (type default))
     (uuid 210ee56c-74f1-4e0e-b1be-3b4e3232d22e)
   )
+  (wire (pts (xy 19.05 17.78) (xy 27.94 17.78))
+    (stroke (width 0) (type default))
+    (uuid 214fc804-18d6-46b1-a786-8240eb6e6b68)
+  )
+  (wire (pts (xy 19.05 15.24) (xy 27.94 15.24))
+    (stroke (width 0) (type default))
+    (uuid 2267c6c5-07ed-478b-818e-ab850f93b961)
+  )
   (wire (pts (xy 334.01 53.34) (xy 334.01 50.8))
     (stroke (width 0) (type default))
     (uuid 22922a3c-7c74-4dd9-84f4-c98561520b15)
@@ -6717,6 +6725,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0c5bc0c5-e8db-4c11-b0b8-e607ce6031bc)
   )
+  (label "BMC_I2C_3_SCK" (at 30.48 173.99 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid 0f622d06-fb8b-48ff-99b6-efc7f43760fd)
+  )
   (label "PHY_AVDDH" (at 335.28 41.91 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 11ed3e16-067e-4fb0-a698-f464c0196517)
@@ -6769,6 +6781,10 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 28f344bf-46c8-42c8-b85c-4650f8634c8b)
   )
+  (label "+5v" (at 24.13 25.4 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid 29403936-549d-46d5-bc9d-0b8e7fa62fdb)
+  )
   (label "3.3v" (at 387.35 60.96 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 29bdaf1d-4dae-464b-a6d7-46c6c5147a9d)
@@ -6781,6 +6797,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 2b69ff3c-0397-484f-a10e-8649c6959d70)
   )
+  (label "BMC_I2C_2_SDA" (at 30.48 171.45 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid 305a57cc-15fc-47e6-8580-f0f959a28af0)
+  )
   (label "PHY_LED_ACT {slash} PHYAD0" (at 250.19 269.24 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 346bc745-fb77-4cb4-b7cc-2bcc71cfb4cf)
@@ -6792,6 +6812,10 @@
   (label "TXRXB_N" (at 229.87 232.41 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 364e0d2c-cc7d-4204-be58-4bd3f03825e0)
+  )
+  (label "3.3v" (at 27.94 17.78 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid 390f39d2-4bf4-4acd-8895-6854ae4b829a)
   )
   (label "TXD2" (at 234.95 143.51 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -6824,6 +6848,10 @@
   (label "TXRXC_N" (at 261.62 90.17 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 48d7a7be-a590-4a12-81d8-1f9c881046f6)
+  )
+  (label "BMC_I2C_2_SCK" (at 30.48 168.91 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid 4a2fbcc8-9b88-4454-b9ed-61b58194beb6)
   )
   (label "1V2" (at 334.01 90.17 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -7037,6 +7065,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c179f858-080d-4383-add9-727305d3a390)
   )
+  (label "+5v" (at 26.67 15.24 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid c1a6f8ee-ecf5-4ab7-8e41-161d89767a7a)
+  )
   (label "TXRXB_N" (at 254 234.95 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c4ead362-55de-4a5c-af85-88e05e461864)
@@ -7072,6 +7104,10 @@
   (label "TXD0" (at 251.46 107.95 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid d8443e3e-6114-49f3-ac53-7a6ca7b2b00c)
+  )
+  (label "BMC_I2C_3_SDA" (at 30.48 176.53 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid df4d845d-1e27-4ab6-90d5-6ea0589c7a25)
   )
   (label "TXRXA_N" (at 254 224.79 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -7122,17 +7158,9 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 172ec456-ad39-4672-ac64-1b5da2d304c9)
   )
-  (hierarchical_label "BMC_I2C_2_SCK" (shape output) (at 30.48 168.91 180) (fields_autoplaced)
+  (hierarchical_label "+3.3v" (shape output) (at 19.05 17.78 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 27b8409a-2d48-4308-b002-25c6b06a55b9)
-  )
-  (hierarchical_label "BMC_I2C_3_SDA" (shape output) (at 30.48 176.53 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 31cc0846-b1c8-4a2e-a45d-af0154bfba7d)
-  )
-  (hierarchical_label "+5v" (shape input) (at 24.13 25.4 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 45315bcd-215d-4235-bfdc-d7c4f6de19dd)
+    (uuid 2dd67d7c-08aa-48dd-831e-64cb437c1859)
   )
   (hierarchical_label "BMC_I2C_1_SDA" (shape output) (at 30.48 166.37 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
@@ -7150,13 +7178,9 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 83b373f2-039f-412d-975a-d1fb4dcbadd1)
   )
-  (hierarchical_label "BMC_I2C_2_SDA" (shape output) (at 30.48 171.45 180) (fields_autoplaced)
+  (hierarchical_label "+5v" (shape input) (at 19.05 15.24 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid a215d823-0291-4bf3-9750-48611a485cbf)
-  )
-  (hierarchical_label "BMC_I2C_3_SCK" (shape output) (at 30.48 173.99 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid b05c8ef8-83dd-4d0e-a921-7a25e268994d)
+    (uuid d2ac43ed-11f2-4e4d-8bea-39341c3d8333)
   )
 
   (symbol (lib_id "Device:C") (at 245.11 59.69 0) (unit 1)
@@ -7200,7 +7224,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C59") (unit 1)
+          (reference "C31") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -7252,7 +7276,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C52") (unit 1)
+          (reference "C36") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -7266,7 +7290,7 @@
   (symbol (lib_id "Device:C") (at 377.19 80.01 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 03c078ad-fd3b-4d7c-892b-dbe855bb9378)
-    (property "Reference" "C72" (at 381.6349 81.28 90)
+    (property "Reference" "C55" (at 381.6349 81.28 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "15p" (at 375.6659 81.28 90)
@@ -7301,7 +7325,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C72") (unit 1)
+          (reference "C55") (unit 1)
         )
       )
       (project "srvant"
@@ -7356,7 +7380,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R45") (unit 1)
+          (reference "R26") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -7411,7 +7435,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R23") (unit 1)
+          (reference "R40") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -7466,7 +7490,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R42") (unit 1)
+          (reference "R45") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -7518,7 +7542,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C69") (unit 1)
+          (reference "C28") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -7573,7 +7597,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R44") (unit 1)
+          (reference "R30") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -7587,7 +7611,7 @@
   (symbol (lib_id "ARJM11:TestPoint") (at 392.43 241.3 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 141b55ca-5d91-464f-91ee-b03e60737f86)
-    (property "Reference" "TP10" (at 386.08 241.3 90)
+    (property "Reference" "TP5" (at 386.08 241.3 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 389.128 238.76 90)
@@ -7621,7 +7645,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "TP10") (unit 1)
+          (reference "TP5") (unit 1)
         )
       )
     )
@@ -7630,7 +7654,7 @@
   (symbol (lib_id "Diode:1N4148") (at 288.29 195.58 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 18a16201-7d8f-47c7-bd20-c376b63adfea)
-    (property "Reference" "D4" (at 284.48 195.58 90)
+    (property "Reference" "D2" (at 284.48 195.58 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1N4148" (at 280.67 193.04 90)
@@ -7671,7 +7695,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "D4") (unit 1)
+          (reference "D2") (unit 1)
         )
       )
     )
@@ -7776,7 +7800,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R28") (unit 1)
+          (reference "R15") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -7831,7 +7855,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R24") (unit 1)
+          (reference "R46") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -7845,7 +7869,7 @@
   (symbol (lib_id "power:GND") (at 242.57 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1e032c6b-7881-45d1-89e8-1801d474dd47)
-    (property "Reference" "#PWR041" (at 242.57 72.39 0)
+    (property "Reference" "#PWR014" (at 242.57 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 242.57 71.12 0)
@@ -7861,7 +7885,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "#PWR041") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -7908,7 +7932,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C60") (unit 1)
+          (reference "C35") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -7963,7 +7987,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R35") (unit 1)
+          (reference "R31") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -8015,7 +8039,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C58") (unit 1)
+          (reference "C27") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -8029,7 +8053,7 @@
   (symbol (lib_id "power:GND") (at 252.73 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 21ff6905-c1a8-4675-b6c8-e6354f7d57c9)
-    (property "Reference" "#PWR039" (at 252.73 45.72 0)
+    (property "Reference" "#PWR016" (at 252.73 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 256.54 40.64 0)
@@ -8045,7 +8069,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -8092,7 +8116,7 @@
           (reference "C1") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C68") (unit 1)
+          (reference "C22") (unit 1)
         )
       )
     )
@@ -8101,7 +8125,7 @@
   (symbol (lib_id "power:GND") (at 322.58 166.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 27d61e75-44f0-4f61-b25f-ed53ae83602b)
-    (property "Reference" "#PWR052" (at 322.58 172.72 0)
+    (property "Reference" "#PWR020" (at 322.58 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 322.58 171.45 0)
@@ -8117,7 +8141,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "#PWR052") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -8164,7 +8188,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C48") (unit 1)
+          (reference "C50") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -8178,7 +8202,7 @@
   (symbol (lib_id "power:GND") (at 246.38 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2ac776b6-6c1f-4eba-b0e1-b48ac660ed94)
-    (property "Reference" "#PWR040" (at 246.38 58.42 0)
+    (property "Reference" "#PWR015" (at 246.38 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 248.92 53.34 0)
@@ -8194,7 +8218,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "#PWR040") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -8203,7 +8227,7 @@
   (symbol (lib_id "power:GND") (at 355.6 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2ad855de-a1d4-4d4c-b419-14bfae878d21)
-    (property "Reference" "#PWR049" (at 355.6 91.44 0)
+    (property "Reference" "#PWR022" (at 355.6 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 355.6 90.17 0)
@@ -8219,7 +8243,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "#PWR049") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -8266,7 +8290,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C57") (unit 1)
+          (reference "C25") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -8318,7 +8342,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C43") (unit 1)
+          (reference "C51") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -8332,7 +8356,7 @@
   (symbol (lib_id "custom-libraries:t113-s3") (at 129.54 146.05 0) (unit 3)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3230709e-8eaf-4536-9d1c-d52a005e6bcc)
-    (property "Reference" "U4" (at 221.615 125.73 0)
+    (property "Reference" "U3" (at 221.615 125.73 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "rp-t113-s3" (at 217.17 196.85 0)
@@ -8499,7 +8523,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "U4") (unit 3)
+          (reference "U3") (unit 3)
         )
       )
     )
@@ -8549,7 +8573,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R22") (unit 1)
+          (reference "R39") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -8601,7 +8625,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C44") (unit 1)
+          (reference "C53") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -8615,7 +8639,7 @@
   (symbol (lib_id "ARJM11:TestPoint") (at 392.43 243.84 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 38a8331e-8604-4763-aca5-19a85f91443b)
-    (property "Reference" "TP11" (at 386.08 243.84 90)
+    (property "Reference" "TP6" (at 386.08 243.84 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 389.128 241.3 90)
@@ -8649,7 +8673,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "TP11") (unit 1)
+          (reference "TP6") (unit 1)
         )
       )
     )
@@ -8699,7 +8723,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R36") (unit 1)
+          (reference "R35") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -8713,7 +8737,7 @@
   (symbol (lib_id "power:GND") (at 361.95 69.85 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4abdde2f-718b-4a4c-8711-5049947cffd7)
-    (property "Reference" "#PWR037" (at 361.95 76.2 0)
+    (property "Reference" "#PWR025" (at 361.95 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 361.95 74.93 0)
@@ -8729,7 +8753,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "#PWR037") (unit 1)
+          (reference "#PWR025") (unit 1)
         )
       )
     )
@@ -8738,7 +8762,7 @@
   (symbol (lib_id "power:GND") (at 199.39 274.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4d6282b4-8dfb-46e6-83aa-d1aebf4d33be)
-    (property "Reference" "#PWR045" (at 199.39 280.67 0)
+    (property "Reference" "#PWR011" (at 199.39 280.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 199.39 279.4 0)
@@ -8754,7 +8778,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "#PWR045") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -8763,7 +8787,7 @@
   (symbol (lib_id "power:GND") (at 294.64 208.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4ef1a845-51d4-4b57-907f-f7d58435bcee)
-    (property "Reference" "#PWR054" (at 294.64 214.63 0)
+    (property "Reference" "#PWR018" (at 294.64 214.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 294.64 213.36 0)
@@ -8779,7 +8803,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "#PWR054") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -8788,7 +8812,7 @@
   (symbol (lib_name "t113-s3_1") (lib_id "custom-libraries:t113-s3") (at -35.56 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4fd9f7ed-9edd-489e-b303-597ba573f2f3)
-    (property "Reference" "U?" (at 54.61 137.16 0)
+    (property "Reference" "U3" (at 54.61 137.16 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "rp-t113-s3" (at 53.34 153.67 0)
@@ -8955,7 +8979,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "U?") (unit 1)
+          (reference "U3") (unit 1)
         )
       )
     )
@@ -9002,7 +9026,7 @@
           (reference "C1") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C64") (unit 1)
+          (reference "C42") (unit 1)
         )
       )
     )
@@ -9011,7 +9035,7 @@
   (symbol (lib_id "power:GND") (at 349.25 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 502fbff1-4316-4afd-b466-78f7b367827d)
-    (property "Reference" "#PWR042" (at 349.25 80.01 0)
+    (property "Reference" "#PWR021" (at 349.25 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 349.25 78.74 0)
@@ -9027,7 +9051,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "#PWR042") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -9077,7 +9101,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R49") (unit 1)
+          (reference "R27") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -9132,7 +9156,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R41") (unit 1)
+          (reference "R44") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -9146,7 +9170,7 @@
   (symbol (lib_id "ARJM11:TestPoint") (at 392.43 238.76 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 543dc71c-62ad-4724-8c17-7d7e0d208377)
-    (property "Reference" "TP8" (at 386.08 238.76 90)
+    (property "Reference" "TP4" (at 386.08 238.76 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 388.62 237.49 90)
@@ -9180,7 +9204,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "TP8") (unit 1)
+          (reference "TP4") (unit 1)
         )
       )
     )
@@ -9230,7 +9254,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R47") (unit 1)
+          (reference "R22") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -9285,7 +9309,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R29") (unit 1)
+          (reference "R16") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -9337,7 +9361,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C50") (unit 1)
+          (reference "C29") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -9351,7 +9375,7 @@
   (symbol (lib_id "power:GND") (at 360.68 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5b6dd807-1d15-4c0c-b0e9-e8d92066b54a)
-    (property "Reference" "#PWR038" (at 360.68 58.42 0)
+    (property "Reference" "#PWR024" (at 360.68 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 360.68 57.15 0)
@@ -9367,7 +9391,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "#PWR038") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
       )
     )
@@ -9376,7 +9400,7 @@
   (symbol (lib_id "KSZ9131RNXI-TR:KSZ9131RNXI-TR") (at 222.25 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 62a24221-2421-4558-8312-35d1abb54857)
-    (property "Reference" "U13" (at 278.13 41.91 0)
+    (property "Reference" "U6" (at 278.13 41.91 0)
       (effects (font (size 1.524 1.524)))
     )
     (property "Value" "KSZ9131RNXI-TR" (at 278.13 44.45 0)
@@ -9458,7 +9482,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "U13") (unit 1)
+          (reference "U6") (unit 1)
         )
       )
     )
@@ -9505,7 +9529,7 @@
           (reference "C1") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C67") (unit 1)
+          (reference "C37") (unit 1)
         )
       )
     )
@@ -9552,7 +9576,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C42") (unit 1)
+          (reference "C49") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -9566,7 +9590,7 @@
   (symbol (lib_id "power:GND") (at 381 167.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 68b319d7-8593-4ead-bd8a-65097f7685fa)
-    (property "Reference" "#PWR043" (at 381 173.99 0)
+    (property "Reference" "#PWR026" (at 381 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 381 172.72 0)
@@ -9582,7 +9606,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR026") (unit 1)
         )
       )
     )
@@ -9591,7 +9615,7 @@
   (symbol (lib_id "power:GND") (at 288.29 278.13 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6e108c02-c5be-48b0-95bf-895d67afecc3)
-    (property "Reference" "#PWR047" (at 288.29 284.48 0)
+    (property "Reference" "#PWR017" (at 288.29 284.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 288.29 283.21 0)
@@ -9607,7 +9631,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "#PWR047") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -9654,7 +9678,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C46") (unit 1)
+          (reference "C45") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -9761,7 +9785,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C56") (unit 1)
+          (reference "C34") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -9816,7 +9840,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R30") (unit 1)
+          (reference "R17") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -9868,7 +9892,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C49") (unit 1)
+          (reference "C52") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -9882,7 +9906,7 @@
   (symbol (lib_id "Connector:ARJM11") (at 280.67 241.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7c7676fb-b1a7-4e63-975c-adc6d1404d65)
-    (property "Reference" "J5" (at 275.59 275.59 0)
+    (property "Reference" "J2" (at 275.59 275.59 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "ARJM11" (at 288.29 274.32 0)
@@ -9912,7 +9936,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "J5") (unit 1)
+          (reference "J2") (unit 1)
         )
       )
       (project "srvant"
@@ -9964,7 +9988,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C41") (unit 1)
+          (reference "C47") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -9978,7 +10002,7 @@
   (symbol (lib_id "power:GND") (at 355.6 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 81571e03-f0a8-46b9-8c5b-5759efdf9b58)
-    (property "Reference" "#PWR050" (at 355.6 101.6 0)
+    (property "Reference" "#PWR023" (at 355.6 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 355.6 100.33 0)
@@ -9994,7 +10018,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "#PWR050") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -10041,7 +10065,7 @@
           (reference "C1") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C73") (unit 1)
+          (reference "C43") (unit 1)
         )
       )
     )
@@ -10088,7 +10112,7 @@
           (reference "C1") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C75") (unit 1)
+          (reference "C41") (unit 1)
         )
       )
     )
@@ -10097,7 +10121,7 @@
   (symbol (lib_id "CM4IO:TPD4EUSB30") (at 215.9 229.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 83adefc0-b686-49ef-aef1-1a4b02cc084b)
-    (property "Reference" "U14" (at 215.9 218.0082 0)
+    (property "Reference" "U5" (at 215.9 218.0082 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TPD4EUSB30" (at 215.9 220.3196 0)
@@ -10140,7 +10164,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "U14") (unit 1)
+          (reference "U5") (unit 1)
         )
       )
       (project "srvant"
@@ -10198,7 +10222,7 @@
   (symbol (lib_id "power:GND") (at 26.67 115.57 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 858bd821-30c1-42e8-9c7a-2d5f19903c85)
-    (property "Reference" "#PWR017" (at 26.67 121.92 0)
+    (property "Reference" "#PWR010" (at 26.67 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 26.67 120.65 0)
@@ -10214,7 +10238,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -10264,7 +10288,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R39") (unit 1)
+          (reference "R29") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -10319,7 +10343,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R55") (unit 1)
+          (reference "R43") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -10374,7 +10398,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R46") (unit 1)
+          (reference "R47") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -10429,7 +10453,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R20") (unit 1)
+          (reference "R11") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -10443,7 +10467,7 @@
   (symbol (lib_id "Device:FerriteBead_Small") (at 212.09 55.88 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 990853b2-eb60-4c08-a56b-9dfa9733f128)
-    (property "Reference" "FB3" (at 212.0519 49.53 90)
+    (property "Reference" "FB1" (at 212.0519 49.53 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "220R" (at 212.0519 52.07 90)
@@ -10478,7 +10502,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "FB3") (unit 1)
+          (reference "FB1") (unit 1)
         )
       )
     )
@@ -10487,7 +10511,7 @@
   (symbol (lib_id "Device:Crystal_GND24") (at 361.95 85.09 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9a5beaa5-2bc3-40c4-b349-55c9a138effa)
-    (property "Reference" "Y2" (at 369.2144 84.4549 90)
+    (property "Reference" "Y1" (at 369.2144 84.4549 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "25Mhz" (at 369.2144 86.9949 90)
@@ -10524,7 +10548,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "Y2") (unit 1)
+          (reference "Y1") (unit 1)
         )
       )
       (project "srvant"
@@ -10576,7 +10600,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C55") (unit 1)
+          (reference "C30") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -10628,7 +10652,7 @@
           (reference "C1") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C66") (unit 1)
+          (reference "C40") (unit 1)
         )
       )
     )
@@ -10637,7 +10661,7 @@
   (symbol (lib_id "power:GND") (at 215.9 242.57 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a35a43b9-d185-4ce3-bb88-301a322bf349)
-    (property "Reference" "#PWR044" (at 215.9 248.92 0)
+    (property "Reference" "#PWR012" (at 215.9 248.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 215.9 247.65 0)
@@ -10653,7 +10677,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "#PWR044") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -10703,7 +10727,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R54") (unit 1)
+          (reference "R41") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -10758,7 +10782,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R56") (unit 1)
+          (reference "R19") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -10810,7 +10834,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C47") (unit 1)
+          (reference "C48") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -10824,7 +10848,7 @@
   (symbol (lib_id "ARJM11:TestPoint") (at 392.43 248.92 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid aa76f896-1a2e-44e0-ae4c-c6617c7fcc83)
-    (property "Reference" "TP13" (at 386.08 248.92 90)
+    (property "Reference" "TP8" (at 386.08 248.92 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 389.128 246.38 90)
@@ -10858,7 +10882,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "TP13") (unit 1)
+          (reference "TP8") (unit 1)
         )
       )
     )
@@ -10867,7 +10891,7 @@
   (symbol (lib_id "Diode:1N4148") (at 304.8 199.39 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ae450170-6bf2-456a-a7f7-99e2e33e8371)
-    (property "Reference" "D5" (at 304.8 195.58 90)
+    (property "Reference" "D3" (at 304.8 195.58 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1N4148" (at 307.34 191.77 90)
@@ -10908,7 +10932,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "D5") (unit 1)
+          (reference "D3") (unit 1)
         )
       )
     )
@@ -10955,7 +10979,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C61") (unit 1)
+          (reference "C38") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -10969,7 +10993,7 @@
   (symbol (lib_id "Device:C") (at 377.19 90.17 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b0609bea-91bc-414b-bb16-83735b02eb30)
-    (property "Reference" "C71" (at 372.7451 88.9 90)
+    (property "Reference" "C56" (at 372.7451 88.9 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "15p" (at 378.2061 88.9 90)
@@ -11004,7 +11028,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C71") (unit 1)
+          (reference "C56") (unit 1)
         )
       )
       (project "srvant"
@@ -11018,7 +11042,7 @@
   (symbol (lib_id "Device:FerriteBead_Small") (at 237.49 29.21 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b1a7ef3d-8d74-41e8-9640-bf6300191e62)
-    (property "Reference" "FB1" (at 237.4519 22.86 90)
+    (property "Reference" "FB3" (at 237.4519 22.86 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "220R" (at 237.4519 25.4 90)
@@ -11053,7 +11077,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "FB1") (unit 1)
+          (reference "FB3") (unit 1)
         )
       )
     )
@@ -11062,7 +11086,7 @@
   (symbol (lib_id "ARJM11:TestPoint") (at 392.43 246.38 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b36a7709-c108-4538-8cde-c2135aa0c263)
-    (property "Reference" "TP12" (at 386.08 246.38 90)
+    (property "Reference" "TP7" (at 386.08 246.38 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TestPoint" (at 389.128 243.84 90)
@@ -11096,7 +11120,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "TP12") (unit 1)
+          (reference "TP7") (unit 1)
         )
       )
     )
@@ -11146,7 +11170,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R31") (unit 1)
+          (reference "R18") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -11198,7 +11222,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C54") (unit 1)
+          (reference "C26") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -11250,7 +11274,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C74") (unit 1)
+          (reference "C46") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -11305,7 +11329,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R52") (unit 1)
+          (reference "R21") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -11360,7 +11384,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R40") (unit 1)
+          (reference "R37") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -11415,7 +11439,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R53") (unit 1)
+          (reference "R42") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -11470,7 +11494,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R37") (unit 1)
+          (reference "R36") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -11522,7 +11546,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C51") (unit 1)
+          (reference "C33") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -11574,7 +11598,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C62") (unit 1)
+          (reference "C24") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -11643,7 +11667,7 @@
   (symbol (lib_id "CM4IO:TPD4EUSB30") (at 199.39 261.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c6e19c66-4b9b-49cb-a097-829a91f2053a)
-    (property "Reference" "U15" (at 199.39 249.7582 0)
+    (property "Reference" "U4" (at 199.39 249.7582 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TPD4EUSB30" (at 199.39 252.0696 0)
@@ -11686,7 +11710,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "U15") (unit 1)
+          (reference "U4") (unit 1)
         )
       )
       (project "srvant"
@@ -11738,7 +11762,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C45") (unit 1)
+          (reference "C54") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -11752,7 +11776,7 @@
   (symbol (lib_id "power:GND") (at 241.3 250.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cbe42e29-4e2c-40cb-98b9-1de0fd211189)
-    (property "Reference" "#PWR046" (at 241.3 256.54 0)
+    (property "Reference" "#PWR013" (at 241.3 256.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 241.3 255.27 0)
@@ -11768,7 +11792,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "#PWR046") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
     )
@@ -11777,7 +11801,7 @@
   (symbol (lib_id "power:GND") (at 388.62 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cc1d3b46-48b2-4535-919e-3d4ff95ec159)
-    (property "Reference" "#PWR048" (at 388.62 97.79 0)
+    (property "Reference" "#PWR027" (at 388.62 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 388.62 96.52 0)
@@ -11793,7 +11817,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "#PWR048") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
     )
@@ -11802,7 +11826,7 @@
   (symbol (lib_id "power:GND") (at 401.32 224.79 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cda1ad0f-0951-4be3-830f-b49c988949ff)
-    (property "Reference" "#PWR051" (at 401.32 231.14 0)
+    (property "Reference" "#PWR028" (at 401.32 231.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 401.32 229.87 0)
@@ -11818,7 +11842,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "#PWR051") (unit 1)
+          (reference "#PWR028") (unit 1)
         )
       )
     )
@@ -11865,7 +11889,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C70") (unit 1)
+          (reference "C32") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -11920,7 +11944,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R50") (unit 1)
+          (reference "R28") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -11934,7 +11958,7 @@
   (symbol (lib_id "Device:FerriteBead_Small") (at 383.54 60.96 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d4e29301-3f65-4dce-bbec-353ff32e173a)
-    (property "Reference" "FB5" (at 383.5019 54.61 90)
+    (property "Reference" "FB6" (at 383.5019 54.61 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "220R" (at 383.5019 57.15 90)
@@ -11969,7 +11993,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "FB5") (unit 1)
+          (reference "FB6") (unit 1)
         )
       )
     )
@@ -11978,7 +12002,7 @@
   (symbol (lib_id "power:GND") (at 300.99 166.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dd0b94b8-2622-476c-97be-4992d07da431)
-    (property "Reference" "#PWR053" (at 300.99 172.72 0)
+    (property "Reference" "#PWR019" (at 300.99 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 300.99 171.45 0)
@@ -11994,7 +12018,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "#PWR053") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -12044,7 +12068,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R51") (unit 1)
+          (reference "R20") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -12099,7 +12123,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R43") (unit 1)
+          (reference "R38") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -12154,7 +12178,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R27") (unit 1)
+          (reference "R14") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -12168,7 +12192,7 @@
   (symbol (lib_id "custom-libraries:t113-s3") (at -39.37 41.91 0) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ea7962cd-3505-41e8-92f5-f0f20c4124a7)
-    (property "Reference" "U4" (at 49.53 25.4 0)
+    (property "Reference" "U3" (at 49.53 25.4 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "rp-t113-s3" (at 50.8 41.91 0)
@@ -12335,7 +12359,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "U4") (unit 2)
+          (reference "U3") (unit 2)
         )
       )
     )
@@ -12385,7 +12409,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R21") (unit 1)
+          (reference "R12") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -12440,7 +12464,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R38") (unit 1)
+          (reference "R25") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -12492,7 +12516,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C63") (unit 1)
+          (reference "C23") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -12547,7 +12571,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R48") (unit 1)
+          (reference "R23") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -12602,7 +12626,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R26") (unit 1)
+          (reference "R13") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -12654,7 +12678,7 @@
           (reference "C9") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C53") (unit 1)
+          (reference "C39") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -12706,7 +12730,7 @@
           (reference "C1") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "C65") (unit 1)
+          (reference "C44") (unit 1)
         )
       )
     )
@@ -12715,7 +12739,7 @@
   (symbol (lib_id "Device:FerriteBead_Small") (at 283.21 276.86 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fa1fcda4-11c7-4397-962c-828821aaa66e)
-    (property "Reference" "FB6" (at 283.21 274.32 90)
+    (property "Reference" "FB4" (at 283.21 274.32 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "220R" (at 283.21 280.67 90)
@@ -12750,7 +12774,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "FB6") (unit 1)
+          (reference "FB4") (unit 1)
         )
       )
     )
@@ -12800,7 +12824,7 @@
           (reference "R4") (unit 1)
         )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R25") (unit 1)
+          (reference "R24") (unit 1)
         )
       )
       (project "CM4IOv5"
@@ -12814,7 +12838,7 @@
   (symbol (lib_id "Device:FerriteBead_Small") (at 377.19 41.91 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fe79795b-bd9b-4b70-a984-7d106717434a)
-    (property "Reference" "FB4" (at 377.1519 35.56 90)
+    (property "Reference" "FB5" (at 377.1519 35.56 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "220R" (at 377.1519 38.1 90)
@@ -12849,7 +12873,7 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "FB4") (unit 1)
+          (reference "FB5") (unit 1)
         )
       )
     )
