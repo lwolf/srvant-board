@@ -3,14 +3,14 @@ name: Generate Gerber files
 on:
   push:
     paths:
-    - 'mk1-rev0.2/**.sch'
-    - 'mk1-rev0.2/**.kicad_pcb'
+    - 'kicad/mk2/srvant-mk2/*.kicad_sch'
+    - 'kicad/mk2/srvant-mk2/*.kicad_pcb'
     - '.github/**.yml'
     - '**.kibot.yml'
   pull_request:
     paths:
-    - 'mk1-rev0.2/**.sch'
-    - 'mk1-rev0.2/*.kicad_pcb'
+    - 'kicad/mk2/srvant-mk2/*.kicad_sch'
+    - 'kicad/mk2/srvant-mk2/*.kicad_pcb'
     - '.github/**.yml'
     - '**.kibot.yml'
   workflow_dispatch:
@@ -29,10 +29,10 @@ jobs:
     - uses: actions/checkout@v2
     - uses: INTI-CMNB/KiBot@v2_k7
       with:
-        config: jlcpcb_gerbers.kibot.yml
+        config: ci.kibot.yaml
         dir: output
-        schema: 'mk1-rev0.2/**/*.sch'
-        board: 'mk1-rev0.2/**/*.kicad_pcb'
+        schema: 'kicad/mk2/srvant-mk2/srvant-mk2.kicad_sch'
+        board: 'kicad/mk2/srvant-mk2/srvant-mk2.kicad_pcb'
     - name: upload results
       uses: actions/upload-artifact@v2
       with:

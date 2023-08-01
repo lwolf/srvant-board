@@ -1,0 +1,274 @@
+# This is a working example.
+# For a more complete reference use `--example`
+kibot:
+  version: 1
+
+global:
+  filters:
+    - number: 1007
+    - number: 1015
+    - number: 58
+
+import:
+  - file: JLCPCB
+    definitions:
+      _KIBOT_MANF_DIR: Manufacturers/JLCPCB
+      _KIBOT_POS_PRE_TRANSFORM: '[''_kicost_rename'', ''_rot_footprint'']'
+      _KIBOT_BOM_ENABLED: 'false'
+
+preflight:
+  check_zone_fills: true
+  # [boolean=false] Option for `run_erc`. ERC warnings are considered errors.
+  erc_warnings: false
+  # [boolean=false] Fill all zones again and save the PCB.
+  fill_zones: true
+  # [boolean=false] Runs the DRC (Distance Rules Check). To ensure we have a valid PCB.
+  # The report file name is controlled by the global output pattern (%i=drc %x=txt).
+  # Note that the KiCad 6+ *Test for parity between PCB and schematic* option is not supported.
+  # If you need to check the parity use the `update_xml` preflight.
+  # KiCad 6 introduced `warnings` they are currently counted be the `unconnected` counter of KiBot.
+  # This will change in the future.
+  run_drc: true
+  # [boolean=false] Runs the ERC (Electrical Rules Check). To ensure the schematic is electrically correct.
+  # The report file name is controlled by the global output pattern (%i=erc %x=txt).
+  run_erc: true
+
+
+outputs:
+  - name: basic_boardview
+    comment: Board View export
+    type: boardview
+    dir: Assembly
+  - name: generic_bom_html
+    comment: Generic Bill of Materials in HTML format
+    type: bom
+    dir: BoM/Generic
+    options:
+      format: HTML
+      count_smd_tht: true
+  - name: generic_bom_csv
+    comment: Generic Bill of Materials in CSV format
+    type: bom
+    dir: BoM/Generic
+    options:
+      format: CSV
+      count_smd_tht: true
+  - name: generic_bom_hrtxt
+    comment: Generic Bill of Materials in HRTXT format
+    type: bom
+    dir: BoM/Generic
+    options:
+      format: HRTXT
+      hrtxt:
+        separator: '|'
+      count_smd_tht: true
+  - name: generic_bom_xlsx
+    comment: Generic Bill of Materials in XLSX format
+    type: bom
+    dir: BoM/Generic
+    options:
+      format: XLSX
+      count_smd_tht: true
+  - name: positional_bom_html
+    comment: Positional Bill of Materials in HTML format
+    type: bom
+    dir: BoM/Positional
+    options:
+      format: HTML
+      columns: &id001
+        - Row
+        - Description
+        - Part
+        - Part Lib
+        - References
+        - Value
+        - Footprint
+        - Footprint Lib
+        - Quantity Per PCB
+        - Build Quantity
+        - Status
+        - Datasheet
+        - Sheetpath
+        - Source BoM
+        - Footprint X
+        - Footprint Y
+        - Footprint Rot
+        - Footprint Side
+        - Footprint Type
+        - Footprint Populate
+        - Footprint X-Size
+        - Footprint Y-Size
+      count_smd_tht: true
+      html:
+        style: modern-red
+  - name: costs_bom_xlsx
+    comment: Costs Bill of Materials in XLSX format
+    type: bom
+    dir: BoM/Costs
+    options:
+      format: XLSX
+      count_smd_tht: true
+      xlsx:
+        style: modern-green
+        kicost: true
+        specs: true
+        kicost_api_disable: KitSpace
+      pre_transform: _kicost_rename
+  - name: basic_diff_pcb
+    comment: PCB diff between the last two changes
+    type: diff
+    dir: diff
+    layers: []
+    options:
+      old: KIBOT_LAST-1
+      old_type: git
+      new: HEAD
+      new_type: git
+      cache_dir: /work/.cache
+      add_link_id: true
+  - name: basic_diff_sch
+    comment: Schematic diff between the last two changes
+    type: diff
+    dir: diff
+    options:
+      old: KIBOT_LAST-1
+      old_type: git
+      new: HEAD
+      new_type: git
+      cache_dir: /work/.cache
+      add_link_id: true
+      pcb: false
+  - name: gerber_modern
+    comment: Gerbers in modern format, recommended by the standard
+    type: gerber
+    dir: Gerbers_and_Drill
+    layers: []
+  - name: basic_ibom
+    comment: Interactive HTML BoM
+    type: ibom
+    dir: Assembly
+  - name: basic_info
+    comment: Information about the run
+    type: info
+    dir: .
+  - name: basic_kikit_present
+    comment: Simple project presentation
+    type: kikit_present
+    dir: Presentation
+    options:
+      description: '# Presentation for srvant-mk2
+
+      This is an automatically generated presentation page'
+      boards:
+        mode: local
+        comment: Resources included
+        front_image: renderer_for_present
+        back_image: renderer_for_present
+        gerbers: gerbers_for_present
+  - name: renderer_for_present
+    comment: Renderer for the presentation
+    type: pcbdraw
+    dir: Render_for_presentation
+    run_by_default: false
+  - name: gerbers_for_present
+    comment: Gerbers for the presentation
+    type: gerber
+    dir: Gerber_for_presentation
+    layers: copper
+    run_by_default: false
+  - name: basic_navigate_results
+    comment: Web page to browse the results
+    type: navigate_results
+    dir: Browse
+    options:
+      link_from_root: index.html
+      skip_not_run: true
+  - name: classic_netlist
+    comment: Schematic netlist in KiCad format
+    type: netlist
+    dir: Export
+  - name: ipc_netlist
+    comment: IPC-D-356 netlist for testing
+    type: netlist
+    dir: Export
+    options:
+      format: ipc
+  - name: basic_pcb_print_pdf
+    comment: PCB
+    type: pcb_print
+    dir: PCB/PDF
+    options:
+      format: PDF
+      pages: []
+      keep_temporal_files: true
+  - name: basic_pcb_print_svg
+    comment: PCB
+    type: pcb_print
+    dir: PCB/SVG
+    options:
+      format: SVG
+      pages: []
+      keep_temporal_files: true
+      add_background: true
+  - name: basic_pcb_print_png
+    comment: PCB
+    type: pcb_print
+    dir: PCB/PNG
+    options:
+      format: PNG
+      pages: []
+      keep_temporal_files: true
+      add_background: true
+  - name: basic_pdf
+    comment: Individual layers in PDF format
+    type: pdf
+    dir: Individual_Layers/PDF
+    layers: []
+  - name: basic_pdf_sch_print
+    comment: Schematic in PDF format
+    type: pdf_sch_print
+    dir: Schematic
+  - name: basic_ps_sch_print
+    comment: Schematic in PS format
+    type: ps_sch_print
+    dir: Schematic
+  - name: report_simple
+    comment: Simple design report
+    type: report
+    output_id: _simple
+    options:
+      template: simple_ASCII
+  - name: report_full
+    comment: Full design report
+    type: report
+    options:
+      template: full_SVG
+  - name: basic_stencil_3d
+    comment: 3D self-registering stencil
+    type: stencil_3d
+    dir: Assembly
+  - name: basic_stencil_for_jig
+    comment: Steel stencil for alignment jig
+    type: stencil_for_jig
+    dir: Assembly
+    options:
+      jigwidth: 100
+      jigheight: 100
+  - name: basic_step
+    comment: 3D model in STEP format
+    type: step
+    dir: 3D
+  - name: basic_svg
+    comment: Individual layers in SVG format
+    type: svg
+    dir: Individual_Layers/SVG
+    layers: []
+  - name: basic_svg_sch_print
+    comment: Schematic in SVG format
+    type: svg_sch_print
+    dir: Schematic
+
+...
+definitions:
+  _KIBOT_MANF_DIR_COMP: Manufacturers
+  _KIBOT_GERBER_LAYERS: ''
