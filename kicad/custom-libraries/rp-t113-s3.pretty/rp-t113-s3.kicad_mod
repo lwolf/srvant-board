@@ -170,5 +170,5 @@
   (pad "131" smd oval (at 3 0) (size 0.65 2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 066d67ed-aafd-47d9-8f57-126073c1e0ae))
   (pad "132" smd oval (at 2 0) (size 0.65 2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 375c208a-cebe-4719-895a-e43db78323a4))
   (pad "133" smd oval (at 1 0) (size 0.65 2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 16931733-e7c1-4a42-a40e-3dd4de047f0f))
-  (pad "134" smd oval (at 0 0) (size 0.65 2) (layers "B.Cu" "B.Paste" "B.Mask") (tstamp bac293d1-2df1-407e-b6d1-aa335ab471e3))
+  (pad "134" smd oval (at 0 0) (size 0.65 2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp bac293d1-2df1-407e-b6d1-aa335ab471e3))
 )

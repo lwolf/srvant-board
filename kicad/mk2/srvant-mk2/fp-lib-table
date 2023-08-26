@@ -6,4 +6,6 @@
   (lib (name "KSZ9131RNXI-TR")(type "KiCad")(uri "${KIPRJMOD}/footprints/KSZ9131RNXI-TR.pretty")(options "")(descr ""))
   (lib (name "MMBZ5240BLT1")(type "KiCad")(uri "${KIPRJMOD}/footprints/MMBZ5240BLT1.pretty")(options "")(descr ""))
   (lib (name "TLV62585DRLR")(type "KiCad")(uri "${KIPRJMOD}/footprints/TLV62585DRLR.pretty")(options "")(descr ""))
+  (lib (name "DIP_SWITCH_DS04-254-2-04BK-SMT")(type "KiCad")(uri "${KIPRJMOD}/footprints/DIP_SWITCH_DS04-254-2-04BK-SMT.pretty")(options "")(descr ""))
+  (lib (name "74LVC32APW")(type "KiCad")(uri "${KIPRJMOD}/footprints/74LVC32APW.pretty")(options "")(descr ""))
 )
