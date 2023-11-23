@@ -1,0 +1,25 @@
+todo:
+* calculate RShunt for the INA129
+* [x] add RTC chip for RPI
+* ETHERNET: 25M crystal or the clock from the CPU
+* Do I want to add sdcard to BMC?
+
+USB:
+* [x] connect USB pins for OTG: nFault,DRV in usb (removed the power chip)
+* [x] Do i need to keep BMC and HOST disconnected? (demux solves this)
+* [X] connect USB_DEBUX_SELECT to GPIO on BMC
+* [x] Since I don't use usb connector, I need to somehow emulate ID pin on BMC (yes, BMC_HOST_DEMUX_CONTROL)
+
+
+---------
+* [x] add a thermo sensors
+* add FAN control ?
+* [x] RTC for rpi
+* NOR Flash?
+* Fuse?
+* [x] Drop usb hub
+* [x] replace USB port with vertical one
+* replace HDMI port with vertical one
+* experiment with placement and form factor. is it possible/worth making 1U with 2 side placement
+* [x] add RC filter to each bmc-host pin (only 0r for now
+* [x] led for bmc power

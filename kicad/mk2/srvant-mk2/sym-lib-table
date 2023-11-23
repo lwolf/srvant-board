@@ -20,4 +20,5 @@
   (lib (name "KSZ9131RNXI-TR")(type "KiCad")(uri "${KIPRJMOD}/libraries/KSZ9131RNXI-TR.kicad_sym")(options "")(descr ""))
   (lib (name "MMBZ5240BLT1")(type "KiCad")(uri "${KIPRJMOD}/libraries/MMBZ5240BLT1.kicad_sym")(options "")(descr ""))
   (lib (name "74LVC32APW")(type "KiCad")(uri "${KIPRJMOD}/libraries/74LVC32APW.kicad_sym")(options "")(descr ""))
+  (lib (name "QFN32_SLB9670VQ20FW785XTMA1_INF")(type "KiCad")(uri "${KIPRJMOD}/libraries/QFN32_SLB9670VQ20FW785XTMA1_INF.kicad_sym")(options "")(descr ""))
 )
