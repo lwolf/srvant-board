@@ -3,16 +3,16 @@ name: Generate Gerber files
 on:
   push:
     paths:
-    - 'kicad/mk2/srvant-mk2/*.kicad_sch'
-    - 'kicad/mk2/srvant-mk2/*.kicad_pcb'
-    - '.github/**.yml'
-    - '**.kibot.yml'
+      - 'kicad/mk2/srvant-mk2/*.kicad_sch'
+      - 'kicad/mk2/srvant-mk2/*.kicad_pcb'
+      - '.github/**.yml'
+      - '**.kibot.yml'
   pull_request:
     paths:
-    - 'kicad/mk2/srvant-mk2/*.kicad_sch'
-    - 'kicad/mk2/srvant-mk2/*.kicad_pcb'
-    - '.github/**.yml'
-    - '**.kibot.yml'
+      - 'kicad/mk2/srvant-mk2/*.kicad_sch'
+      - 'kicad/mk2/srvant-mk2/*.kicad_pcb'
+      - '.github/**.yml'
+      - '**.kibot.yml'
   workflow_dispatch:
     inputs:
       name:
@@ -26,17 +26,17 @@ jobs:
   example:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: INTI-CMNB/KiBot@v2_k7
-      with:
-        config: ci.kibot.yaml
-        dir: output
-        schema: 'kicad/mk2/srvant-mk2/srvant-mk2.kicad_sch'
-        board: 'kicad/mk2/srvant-mk2/srvant-mk2.kicad_pcb'
-    - name: upload results
-      uses: actions/upload-artifact@v2
-      with:
-        name: output
-        path: output
+      - uses: actions/checkout@v2
+      - uses: INTI-CMNB/KiBot@v2_k7
+        with:
+          config: ci.kibot.yaml
+          dir: output
+          schema: 'kicad/mk2/srvant-mk2/srvant-mk2.kicad_sch'
+          board: 'kicad/mk2/srvant-mk2/srvant-mk2.kicad_pcb'
+      - name: upload results
+        uses: actions/upload-artifact@v2
+        with:
+          name: output
+          path: output
 
 

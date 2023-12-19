@@ -28,10 +28,10 @@ preflight:
   # If you need to check the parity use the `update_xml` preflight.
   # KiCad 6 introduced `warnings` they are currently counted be the `unconnected` counter of KiBot.
   # This will change in the future.
-  run_drc: true
+  # run_drc: true
   # [boolean=false] Runs the ERC (Electrical Rules Check). To ensure the schematic is electrically correct.
   # The report file name is controlled by the global output pattern (%i=erc %x=txt).
-  run_erc: true
+#  run_erc: true
 
 
 outputs:
@@ -114,18 +114,18 @@ outputs:
         specs: true
         kicost_api_disable: KitSpace
       pre_transform: _kicost_rename
-  - name: basic_diff_pcb
-    comment: PCB diff between the last two changes
-    type: diff
-    dir: diff
-    layers: []
-    options:
-      old: KIBOT_LAST-1
-      old_type: git
-      new: HEAD
-      new_type: git
-      cache_dir: /work/.cache
-      add_link_id: true
+#  - name: basic_diff_pcb
+#    comment: PCB diff between the last two changes
+#    type: diff
+#    dir: diff
+#    layers: []
+#    options:
+#      old: KIBOT_LAST-1
+#      old_type: git
+#      new: HEAD
+#      new_type: git
+#      cache_dir: /work/.cache
+#      add_link_id: true
   - name: basic_diff_sch
     comment: Schematic diff between the last two changes
     type: diff
@@ -199,15 +199,66 @@ outputs:
     dir: PCB/PDF
     options:
       format: PDF
-      pages: []
+      scaling: 0
+      autoscale_margin_x: 50
+      autoscale_margin_y: 25
+      output: '%f%v-PCB.%x'
       keep_temporal_files: true
+      plot_sheet_reference: false
+      pages:
+        - layers:
+            - layer: F.Silkscreen
+            - layer: Edge.Cuts
+          sheet: Silk
+        - layers:
+            - layer: User.Drawings
+            - layer: Edge.Cuts
+          sheet: Drawings
+        - layers:
+            - layer: F.Cu
+            - layer: F.Mask
+              color: '#14332440'
+            - layer: F.Paste
+            - layer: F.Silkscreen
+            - layer: Edge.Cuts
+          sheet: Front copper
+        - layers:
+            - layer: B.Cu
+            - layer: B.Mask
+              color: '#14332440'
+            - layer: Edge.Cuts
+          mirror: true
+          sheet: Bottom copper
   - name: basic_pcb_print_svg
     comment: PCB
     type: pcb_print
     dir: PCB/SVG
     options:
       format: SVG
-      pages: []
+      pages:
+        - layers:
+            - layer: F.Silkscreen
+            - layer: Edge.Cuts
+          sheet: Silk
+        - layers:
+            - layer: User.Drawings
+            - layer: Edge.Cuts
+          sheet: Drawings
+        - layers:
+            - layer: F.Cu
+            - layer: F.Mask
+              color: '#14332440'
+            - layer: F.Paste
+            - layer: F.Silkscreen
+            - layer: Edge.Cuts
+          sheet: Front copper
+        - layers:
+            - layer: B.Cu
+            - layer: B.Mask
+              color: '#14332440'
+            - layer: Edge.Cuts
+          mirror: true
+          sheet: Bottom copper
       keep_temporal_files: true
       add_background: true
   - name: basic_pcb_print_png
@@ -216,7 +267,30 @@ outputs:
     dir: PCB/PNG
     options:
       format: PNG
-      pages: []
+      pages:
+        - layers:
+            - layer: F.Silkscreen
+            - layer: Edge.Cuts
+          sheet: Silk
+        - layers:
+            - layer: User.Drawings
+            - layer: Edge.Cuts
+          sheet: Drawings
+        - layers:
+            - layer: F.Cu
+            - layer: F.Mask
+              color: '#14332440'
+            - layer: F.Paste
+            - layer: F.Silkscreen
+            - layer: Edge.Cuts
+          sheet: Front copper
+        - layers:
+            - layer: B.Cu
+            - layer: B.Mask
+              color: '#14332440'
+            - layer: Edge.Cuts
+          mirror: true
+          sheet: Bottom copper
       keep_temporal_files: true
       add_background: true
   - name: basic_pdf
@@ -247,13 +321,13 @@ outputs:
     comment: 3D self-registering stencil
     type: stencil_3d
     dir: Assembly
-  - name: basic_stencil_for_jig
-    comment: Steel stencil for alignment jig
-    type: stencil_for_jig
-    dir: Assembly
-    options:
-      jigwidth: 100
-      jigheight: 100
+#  - name: basic_stencil_for_jig
+#    comment: Steel stencil for alignment jig
+#    type: stencil_for_jig
+#    dir: Assembly
+#    options:
+#      jigwidth: 100
+#      jigheight: 100
   - name: basic_step
     comment: 3D model in STEP format
     type: step
@@ -269,6 +343,6 @@ outputs:
     dir: Schematic
 
 ...
-definitions:
-  _KIBOT_MANF_DIR_COMP: Manufacturers
-  _KIBOT_GERBER_LAYERS: ''
+#definitions:
+#  _KIBOT_MANF_DIR_COMP: Manufacturers
+#  _KIBOT_GERBER_LAYERS: ''
