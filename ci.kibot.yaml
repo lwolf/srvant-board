@@ -128,18 +128,18 @@ outputs:
 #      cache_dir: /work/.cache
 #      add_link_id: true
 
-  - name: basic_diff_sch
-    comment: Schematic diff between the last two changes
-    type: diff
-    dir: diff
-    options:
-      old: KIBOT_LAST-1
-      old_type: git
-      new: HEAD
-      new_type: git
-      cache_dir: /kikit/.cache
-      add_link_id: true
-      pcb: false
+#  - name: basic_diff_sch
+#    comment: Schematic diff between the last two changes
+#    type: diff
+#    dir: diff
+#    options:
+#      old: KIBOT_LAST-1
+#      old_type: git
+#      new: HEAD
+#      new_type: git
+#      cache_dir: /kikit/.cache
+#      add_link_id: true
+#      pcb: false
 
   - name: gerber_modern
     comment: Gerbers in modern format, recommended by the standard
