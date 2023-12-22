@@ -232,70 +232,70 @@ outputs:
             - layer: Edge.Cuts
           mirror: true
           sheet: Bottom copper
-  - name: basic_pcb_print_svg
-    comment: PCB
-    type: pcb_print
-    dir: PCB/SVG
-    options:
-      format: SVG
-      pages:
-        - layers:
-            - layer: F.Silkscreen
-            - layer: Edge.Cuts
-          sheet: Silk
-        - layers:
-            - layer: User.Drawings
-            - layer: Edge.Cuts
-          sheet: Drawings
-        - layers:
-            - layer: F.Cu
-            - layer: F.Mask
-              color: '#14332440'
-            - layer: F.Paste
-            - layer: F.Silkscreen
-            - layer: Edge.Cuts
-          sheet: Front copper
-        - layers:
-            - layer: B.Cu
-            - layer: B.Mask
-              color: '#14332440'
-            - layer: Edge.Cuts
-          mirror: true
-          sheet: Bottom copper
-      keep_temporal_files: true
-      add_background: true
-  - name: basic_pcb_print_png
-    comment: PCB
-    type: pcb_print
-    dir: PCB/PNG
-    options:
-      format: PNG
-      pages:
-        - layers:
-            - layer: F.Silkscreen
-            - layer: Edge.Cuts
-          sheet: Silk
-        - layers:
-            - layer: User.Drawings
-            - layer: Edge.Cuts
-          sheet: Drawings
-        - layers:
-            - layer: F.Cu
-            - layer: F.Mask
-              color: '#14332440'
-            - layer: F.Paste
-            - layer: F.Silkscreen
-            - layer: Edge.Cuts
-          sheet: Front copper
-        - layers:
-            - layer: B.Cu
-            - layer: B.Mask
-              color: '#14332440'
-            - layer: Edge.Cuts
-          mirror: true
-          sheet: Bottom copper
-      keep_temporal_files: true
-      add_background: true
+#  - name: basic_pcb_print_svg
+#    comment: PCB
+#    type: pcb_print
+#    dir: PCB/SVG
+#    options:
+#      format: SVG
+#      pages:
+#        - layers:
+#            - layer: F.Silkscreen
+#            - layer: Edge.Cuts
+#          sheet: Silk
+#        - layers:
+#            - layer: User.Drawings
+#            - layer: Edge.Cuts
+#          sheet: Drawings
+#        - layers:
+#            - layer: F.Cu
+#            - layer: F.Mask
+#              color: '#14332440'
+#            - layer: F.Paste
+#            - layer: F.Silkscreen
+#            - layer: Edge.Cuts
+#          sheet: Front copper
+#        - layers:
+#            - layer: B.Cu
+#            - layer: B.Mask
+#              color: '#14332440'
+#            - layer: Edge.Cuts
+#          mirror: true
+#          sheet: Bottom copper
+#      keep_temporal_files: true
+#      add_background: true
+#  - name: basic_pcb_print_png
+#    comment: PCB
+#    type: pcb_print
+#    dir: PCB/PNG
+#    options:
+#      format: PNG
+#      pages:
+#        - layers:
+#            - layer: F.Silkscreen
+#            - layer: Edge.Cuts
+#          sheet: Silk
+#        - layers:
+#            - layer: User.Drawings
+#            - layer: Edge.Cuts
+#          sheet: Drawings
+#        - layers:
+#            - layer: F.Cu
+#            - layer: F.Mask
+#              color: '#14332440'
+#            - layer: F.Paste
+#            - layer: F.Silkscreen
+#            - layer: Edge.Cuts
+#          sheet: Front copper
+#        - layers:
+#            - layer: B.Cu
+#            - layer: B.Mask
+#              color: '#14332440'
+#            - layer: Edge.Cuts
+#          mirror: true
+#          sheet: Bottom copper
+#      keep_temporal_files: true
+#      add_background: true
   - name: basic_pdf
     comment: Individual layers in PDF format
     type: pdf
