@@ -5448,6 +5448,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0ba1fab9-099e-4fd4-ad6e-84ca251aba58)
   )
+  (text "PCB Layout Constraint: \n* The RGMII TXCLK - TX signals must be trace length matched from\nDUT to RGMII MAC to within 50 mils.\n* The RGMII RX signals must be trace length matched from DUT to\nRGMII MAC to within 50 mils.\n* In addition to this, RXCLK must be either\nlonger than the RX signals to add delay or the\ndelay (1.2 ns-1.5 ns) must be added on the\nRGMII MAC. The KSZ9131RNX also provides\npad skew values to adjust the delays if needed.\n\n(https://ww1.microchip.com/downloads/en/DeviceDoc/KSZ9131RNX%20Reference%20Design.pdf)"
+    (at 433.07 191.77 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 303332eb-3c4c-472b-9551-5f7e0fbb019d)
+  )
   (text "Place these 22R resistors\nas close as possible to KSZ9131"
     (at 215.9 203.2 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
