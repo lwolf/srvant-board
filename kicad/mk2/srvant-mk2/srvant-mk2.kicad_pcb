@@ -814,6 +814,11 @@
       (net 327 "/bmc/BMC_USB_HOST_P") (pinfunction "HSD1_P") (pintype "bidirectional") (tstamp a353b5e2-962a-45b3-91a6-4b8bfe7caef5))
     (pad "10" smd rect (at 0.8509 -0.399999 90) (size 0.2286 0.762) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 1 "GND") (pinfunction "nOE") (pintype "input") (tstamp 53aac95d-0920-49b3-a8ac-aeb592b97313))
+    (model "${MK2_3D_MODELS}/usbmux_UQFN10_ONS.step"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
   )
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
@@ -1232,6 +1237,11 @@
       (net 187 "/power/3V3P_FB") (pinfunction "FB") (pintype "input") (tstamp b2437534-6808-4e20-b6bb-ddf715796e78))
     (pad "6" smd rect (at 0.740001 -0.500002 270) (size 0.299999 0.670001) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 341 "unconnected-(U15-NC-Pad6)") (pinfunction "NC") (pintype "unspecified+no_connect") (tstamp cae6807b-4e2b-402d-9996-29a68186c26c))
+    (model "${MK2_3D_MODELS}/TLV62585DRLR-DRL0006A.stp"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
@@ -3723,6 +3733,11 @@
         )
       )
     )
+    (model "${MK2_3D_MODELS}/button-TL3340AF160QG.step"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 180 180))
+    )
   )
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
@@ -4787,6 +4802,11 @@
     (pad "2" smd rect (at 1.0287 1.0414 270) (size 0.5588 1.27) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 2 "Net-(D1-A)") (pinfunction "A") (pintype "passive") (tstamp 855ef179-a526-4cec-9bd9-19f9afc31db6))
     (pad "3" smd rect (at 0 -1.0414 270) (size 0.5588 1.27) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 1d8961d6-5911-4377-9e38-12e240a7a001))
+    (model "${MK2_3D_MODELS}/SOT-23-3_1P4X3P040_ONS.step"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
@@ -5064,7 +5084,7 @@
       (net 1 "GND") (pinfunction "EP") (pintype "passive") (tstamp ee6e7dcb-8b08-40d8-b39e-9821a821129b))
     (pad "9" thru_hole circle (at 0.65 1.95 180) (size 0.5 0.5) (drill 0.2) (layers "*.Cu")
       (net 1 "GND") (pinfunction "EP") (pintype "passive") (tstamp d0e081fd-c723-41cb-8728-5e59892b0e74))
-    (model "${KICAD7_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm.wrl"
+    (model ":KICAD7_3DMODEL_DIR:Package_SO.3dshapes/PowerIntegrations_SO-8.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -5249,6 +5269,11 @@
       (net 63 "/BMC ethernet/3.3v_BMC") (pinfunction "2") (pintype "passive") (tstamp b43c5ae3-0eda-4803-91ac-369714e029cb))
     (pad "3" smd rect (at -4.5466 2.2352 90) (size 2.1082 1.397) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp d03c5a4c-b937-418c-945f-09eaa60301cc))
     (pad "4" smd rect (at 4.5466 2.2352 90) (size 2.1082 1.397) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp d4028e8f-3107-4750-b7b8-28329ee4f551))
+    (model ":KICAD7_3DMODEL_DIR:Button_Switch_SMD.3dshapes/SW_SPST_PTS645.wrl"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
@@ -5775,6 +5800,11 @@
       (net 1 "GND") (pinfunction "-") (pintype "passive") (tstamp 8b73676d-6d38-48ef-a6ec-b8c097d5df09))
     (pad "3" thru_hole circle (at 0 -3.724999 270) (size 1.7526 1.7526) (drill 1.2446) (layers "*.Cu" "*.Mask") (tstamp a0baeb6c-b082-4798-9a90-17564a2a7d54))
     (pad "4" thru_hole circle (at 0 3.72491 270) (size 2.0066 2.0066) (drill 1.4986) (layers "*.Cu" "*.Mask") (tstamp 1f38b85f-f783-460b-b0f8-91cb135f50af))
+    (model ":KICAD7_3DMODEL_DIR:Battery.3dshapes/BatteryHolder_Keystone_1058_1x2032.step"
+      (offset (xyz 0 0 0))
+      (scale (xyz 0.6 0.8 1))
+      (rotate (xyz 0 0 90))
+    )
   )
 
   (footprint "Capacitor_SMD:C_1206_3216Metric" (layer "F.Cu")
@@ -6621,6 +6651,11 @@
       (net 343 "Net-(SW3-Pad2)") (pinfunction "2") (pintype "passive") (tstamp 2b3b86a9-e894-4282-9f56-ec16b944c876))
     (pad "3" smd rect (at -4.5466 2.2352 90) (size 2.1082 1.397) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp ad7efdd2-4cde-4c04-b8e8-b10ffffd35ec))
     (pad "4" smd rect (at 4.5466 2.2352 90) (size 2.1082 1.397) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 4a4dbfa7-5f2b-4adf-9ca3-4005908dbaf2))
+    (model ":KICAD7_3DMODEL_DIR:Button_Switch_SMD.3dshapes/SW_SPST_PTS645.wrl"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
@@ -8012,6 +8047,11 @@
           (xy 107.05 197.75)
         )
       )
+    )
+    (model "${MK2_3D_MODELS}/button-TL3340AF160QG.step"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 -180 -180))
     )
   )
 
@@ -9699,6 +9739,11 @@
       (net 1 "GND") (pinfunction "NCI") (pintype "unspecified") (tstamp dbf3b547-d5a1-4380-8609-7887b4c3068d))
     (pad "33" smd rect (at 0 0 270) (size 3.7084 3.7084) (layers "F.Cu" "F.Mask")
       (net 1 "GND") (pinfunction "GND") (pintype "unspecified") (tstamp 6650de94-4a78-4d8f-8f8f-c8f67e780806))
+    (model "${MK2_3D_MODELS}/QFN32_SLB9670VQ20FW785XTMA1_INF.step"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
@@ -10212,7 +10257,7 @@
       (net 357 "Net-(U17-OSCO)") (pinfunction "1") (pintype "passive") (tstamp 79b22f83-c43f-492b-8973-65941c6d8c2a))
     (pad "2" smd rect (at -1.25 0 180) (size 1 1.8) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 356 "Net-(U17-OSCI)") (pinfunction "2") (pintype "passive") (tstamp 2128a422-7ce8-4a9d-bb13-6d796ceceff3))
-    (model "${KICAD7_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_3215-2Pin_3.2x1.5mm.wrl"
+    (model "${KICAD7_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_MicroCrystal_CC7V-T1A-2Pin_3.2x1.5mm.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -11425,10 +11470,10 @@
       (net 147 "Net-(FB5-Pad2)") (pintype "passive") (tstamp 3c25935c-b6c5-4d2f-8df9-5d8de8e88520))
     (pad "SH" thru_hole circle (at 13.46 5.84 180) (size 2.2 2.2) (drill 1.6) (layers "*.Cu" "*.Mask")
       (net 147 "Net-(FB5-Pad2)") (pintype "passive") (tstamp edc122ae-d6b5-4b91-aaa4-3518edbe7cae))
-    (model "${KICAD7_3DMODEL_DIR}/Connector_RJ.3dshapes/RJ45_Wuerth_7499111446_Horizontal.wrl"
-      (offset (xyz 0 0 0))
+    (model "${MK2_3D_MODELS}/RJ45-c-5-2337992-3-a-3d.stp"
+      (offset (xyz 5.5 -19 7))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 90 180 180))
     )
   )
 
@@ -12211,6 +12256,11 @@
       (net 258 "Net-(U12-ISET)") (pinfunction "ISET") (pintype "input") (tstamp 8ac0350e-2a30-4f55-ad79-c966623431c9))
     (pad "49" smd rect (at 0 0 90) (size 5.1562 5.1562) (layers "F.Cu" "F.Mask")
       (net 1 "GND") (pinfunction "P_VSS") (pintype "power_out") (tstamp b56ce53a-a988-46d3-beff-315ede044236))
+    (model ":KICAD7_3DMODEL_DIR:Package_DFN_QFN.3dshapes/QFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm.step"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
@@ -12628,6 +12678,11 @@
     (pad "21" thru_hole circle (at 7.249998 -3.430001 90) (size 1.8288 1.8288) (drill 1.3208) (layers "*.Cu" "*.Mask") (tstamp f51c1876-a2f4-4331-b00c-a5566eb77ec9))
     (pad "22" thru_hole circle (at -7.85 1.47 90) (size 1.8288 1.8288) (drill 1.3208) (layers "*.Cu" "*.Mask") (tstamp 65b4d813-2676-4354-b12d-21032efc828c))
     (pad "23" thru_hole circle (at 7.85 1.47 90) (size 1.8288 1.8288) (drill 1.3208) (layers "*.Cu" "*.Mask") (tstamp a53a5802-f230-4be5-a8dc-ea3a1404d9f4))
+    (model ":KICAD7_3DMODEL_DIR:Connector_HDMI.3dshapes/HDMI_A_Molex_208658-1001_Horizontal.step"
+      (offset (xyz -0.5 1.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
   )
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
@@ -13077,8 +13132,8 @@
       (net 1 "GND") (pinfunction "Pin_1") (pintype "passive") (tstamp 56da7e81-3195-4f2e-bc52-914c651b548a))
     (pad "2" thru_hole circle (at 5.08 0 180) (size 3 3) (drill 1.52) (layers "*.Cu" "*.Mask")
       (net 383 "/power/VIN") (pinfunction "Pin_2") (pintype "passive") (tstamp a7ce4efa-fc9f-4735-87c4-6ca9f4b25da4))
-    (model "${KICAD6_3DMODEL_DIR}/TerminalBlock.3dshapes/TerminalBlock_bornier-2_P5.08mm.wrl"
-      (offset (xyz 2.539999962 0 0))
+    (model "${KICAD7_3DMODEL_DIR}/TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal.step"
+      (offset (xyz 0.04 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -13812,7 +13867,7 @@
       (net 333 "Net-(U6-OSCO)") (pinfunction "1") (pintype "passive") (tstamp 61e93c32-4c01-45c9-8ba4-7686b4921d03))
     (pad "2" smd rect (at -1.25 0 180) (size 1 1.8) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 332 "Net-(U6-OSCI)") (pinfunction "2") (pintype "passive") (tstamp 325922dc-0840-4929-8e16-7c596eb38069))
-    (model "${KICAD7_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_3215-2Pin_3.2x1.5mm.wrl"
+    (model "${KICAD7_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_MicroCrystal_CC7V-T1A-2Pin_3.2x1.5mm.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -15029,10 +15084,10 @@
       (net 148 "Net-(FB8-Pad1)") (pintype "passive") (tstamp ee7c8aaa-4f32-43b5-b619-81e726d719f7))
     (pad "SH" thru_hole circle (at 13.46 5.84 180) (size 2.2 2.2) (drill 1.6) (layers "*.Cu" "*.Mask")
       (net 148 "Net-(FB8-Pad1)") (pintype "passive") (tstamp ff556dc4-2912-4718-a980-00710c61e5fa))
-    (model "${KICAD7_3DMODEL_DIR}/Connector_RJ.3dshapes/RJ45_Wuerth_7499111446_Horizontal.wrl"
-      (offset (xyz 0 0 0))
+    (model "${MK2_3D_MODELS}/RJ45-c-5-2337992-3-a-3d.stp"
+      (offset (xyz 5.5 -20 5.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -15335,6 +15390,16 @@
       (net 140 "Net-(U12-XO)") (pinfunction "3") (pintype "passive") (tstamp e08d19b1-eb3a-424e-bbb7-728533f33018))
     (pad "4" smd rect (at 3.15 -1.25 90) (size 2.2098 1.397) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 1 "GND") (pinfunction "4") (pintype "passive") (tstamp 3509dcc9-c1c9-4229-ab8e-2a67688104b6))
+    (model ":KICAD7_3DMODEL_DIR:Oscillator.3dshapes/Oscillator_SMD_Abracon_ASV-4Pin_7.0x5.1mm.wrl"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ":KICAD7_3DMODEL_DIR:Oscillator.3dshapes/Oscillator_SMD_EuroQuartz_XO53-4Pin_5.0x3.2mm.step"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
@@ -16744,6 +16809,11 @@
       (net 146 "Net-(J4-GND)") (pinfunction "Shield") (pintype "passive") (tstamp 25e725a1-487f-47ba-a48a-a19f3a55a902))
     (model "${KICAD7_3DMODEL_DIR}/Connector_USB.3dshapes/USB_Micro-B_Amphenol_10103594-0001LF_Horizontal.wrl"
       (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ":KICAD7_3DMODEL_DIR:Connector_USB.3dshapes/USB_Micro-B_Molex_47346-0001.step"
+      (offset (xyz 0 0.5 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -23227,56 +23297,56 @@
   (segment (start 54.8505 53.9779) (end 55.4096 53.9779) (width 1.27) (layer "B.Cu") (net 344) (tstamp aee9df22-bfb2-4ec3-a454-b22f1098b4fb))
   (segment (start 27.2 165.4) (end 14.689 165.4) (width 0.25) (layer "B.Cu") (net 344) (tstamp cfdf367c-7e68-49e3-9845-f4b5fd05d49a))
   (segment (start 13.589 175.26) (end 13.589 169.3164) (width 0.13) (layer "B.Cu") (net 344) (tstamp f1b80f4a-e10f-492d-b7f4-658eb5430e11))
+  (segment (start 32.131 191.48) (end 32.131 171.3992) (width 0.25) (layer "F.Cu") (net 345) (tstamp 01829f73-f51a-4147-873a-2fcb185e6ed9))
   (segment (start 15.5552 161.6101) (end 20.6351 161.6101) (width 0.25) (layer "F.Cu") (net 345) (tstamp 01a8ebe4-0ef0-4b04-80d8-93f0d6f17e1c))
   (segment (start 34.4362 116.7108) (end 34.4362 117.3542) (width 0.13) (layer "F.Cu") (net 345) (tstamp 03ef1f10-c534-42d0-923b-e8c9e2ba5f51))
   (segment (start 32.8362 117.2658) (end 33.2232 117.6528) (width 0.13) (layer "F.Cu") (net 345) (tstamp 0bf26e24-9f5f-4d9a-bf49-9aeb3bf5208b))
   (segment (start 21.194 159.4866) (end 21.194 159.3494) (width 0.25) (layer "F.Cu") (net 345) (tstamp 10770d3b-4e07-45f5-aeab-4ebbb89f5c8d))
   (segment (start 34.1506 117.6398) (end 33.2362 117.6398) (width 0.13) (layer "F.Cu") (net 345) (tstamp 11781980-b9a8-45f3-b67d-306b4b5e86f7))
   (segment (start 33.2362 117.6398) (end 33.2232 117.6528) (width 0.13) (layer "F.Cu") (net 345) (tstamp 2073d398-48db-41c3-933a-3ee19528d564))
+  (segment (start 32.131 171.3992) (end 27.178 166.4462) (width 0.25) (layer "F.Cu") (net 345) (tstamp 211b04dc-a834-45be-ad34-1e6e3ba69945))
   (segment (start 23.1556 127.7204) (end 23.1556 157.525) (width 0.76) (layer "F.Cu") (net 345) (tstamp 228025d4-5df4-4003-bf8c-bda99595d743))
   (segment (start 20.4828 158.9684) (end 20.1272 158.6128) (width 0.25) (layer "F.Cu") (net 345) (tstamp 26932255-b577-4391-89af-ad2ab9bdab2f))
+  (segment (start 27.178 166.4462) (end 26.0858 166.4462) (width 0.25) (layer "F.Cu") (net 345) (tstamp 2953a8bb-c96f-48ab-b96d-e48701a078eb))
   (segment (start 20.6351 161.6101) (end 21.194 161.0512) (width 0.25) (layer "F.Cu") (net 345) (tstamp 2b142f2a-cfef-4559-872f-6ec81b7ec719))
   (segment (start 21.194 161.0512) (end 21.194 159.4866) (width 0.25) (layer "F.Cu") (net 345) (tstamp 31504e55-72fc-41f7-b7b7-38e2f5da4946))
   (segment (start 64.93 192.77) (end 57.73 192.77) (width 0.25) (layer "F.Cu") (net 345) (tstamp 3ac1fd2b-b4fb-4731-b46f-64713f6bbae8))
   (segment (start 49.882599 78.184001) (end 49.8666 78.2) (width 0.13) (layer "F.Cu") (net 345) (tstamp 4625e01b-0d2b-470c-b1e7-17d645e42b7a))
+  (segment (start 55.97 191.01) (end 54.25 192.73) (width 0.25) (layer "F.Cu") (net 345) (tstamp 52e51f54-e87d-40e0-9aaf-c017ce42eba2))
   (segment (start 20.1422 158.5978) (end 20.1272 158.6128) (width 0.13) (layer "F.Cu") (net 345) (tstamp 5e942129-1c9d-4fad-9065-cf35936420d2))
   (segment (start 52.3559 72.8239) (end 49.8666 75.3132) (width 0.13) (layer "F.Cu") (net 345) (tstamp 63a788ad-f392-4a63-a5ec-f2a7a4bc0896))
   (segment (start 52.373701 75.0083) (end 52.373701 73.180899) (width 0.13) (layer "F.Cu") (net 345) (tstamp 64379b53-8012-4425-9a24-0a99f66a87ec))
   (segment (start 21.194 159.3494) (end 20.813 158.9684) (width 0.25) (layer "F.Cu") (net 345) (tstamp 65ae8b48-31a7-4906-96b0-b8341b07fee1))
   (segment (start 34.4362 117.3542) (end 34.1506 117.6398) (width 0.13) (layer "F.Cu") (net 345) (tstamp 6df00784-dd75-4b23-81e8-cd75119024aa))
   (segment (start 56.3636 73.1936) (end 55.8636 73.1936) (width 0.13) (layer "F.Cu") (net 345) (tstamp 76dda356-d2ff-4eca-81fc-eed8a6403fad))
-  (segment (start 26.0858 166.4462) (end 25.8318 166.7002) (width 0.25) (layer "F.Cu") (net 345) (tstamp 77a9c00e-9fcd-456b-b512-66b501deb854))
   (segment (start 55.8636 73.1936) (end 52.7256 73.1936) (width 0.13) (layer "F.Cu") (net 345) (tstamp 7b8ba885-3fb2-4716-9654-0c44fa4fa90a))
-  (segment (start 32.131 192.5828) (end 32.131 171.3992) (width 0.25) (layer "F.Cu") (net 345) (tstamp 7dc3d7b3-404f-4efc-a712-1628c8c030b9))
   (segment (start 32.8362 116.7108) (end 32.8362 117.2658) (width 0.13) (layer "F.Cu") (net 345) (tstamp 8e1ee894-95b2-40b0-a4e6-bd8ddabee6ec))
   (segment (start 52.373701 73.180899) (end 52.3838 73.1708) (width 0.13) (layer "F.Cu") (net 345) (tstamp 8e2ef3ae-3119-492f-9650-38f9afadfeb8))
   (segment (start 25.8318 166.7002) (end 25.8318 167.1574) (width 0.25) (layer "F.Cu") (net 345) (tstamp 92f9f154-463e-4db6-99cb-8c617acaa6d2))
-  (segment (start 54.25 192.73) (end 32.2782 192.73) (width 0.25) (layer "F.Cu") (net 345) (tstamp 93797605-a2ac-4be5-ad8f-86df418da666))
   (segment (start 25.1968 166.0652) (end 25.1968 164.6936) (width 0.25) (layer "F.Cu") (net 345) (tstamp 94c53c74-4c75-4f76-8601-2f45f07afbb4))
   (segment (start 25.219 167.7702) (end 25.219 168.4147) (width 0.25) (layer "F.Cu") (net 345) (tstamp 9784cf36-43ba-4b19-ba1f-dc76fa9aedb1))
-  (segment (start 27.178 166.4462) (end 26.0858 166.4462) (width 0.25) (layer "F.Cu") (net 345) (tstamp 9950146b-1d94-402a-a918-70ad6081e2bf))
   (segment (start 20.1422 157.734) (end 20.1422 158.5978) (width 0.25) (layer "F.Cu") (net 345) (tstamp 9af4a8dc-13c1-4418-a944-1984e18460ce))
   (segment (start 55.9003 73.2303) (end 55.8636 73.1936) (width 0.13) (layer "F.Cu") (net 345) (tstamp 9c830f29-4ce2-45ce-9b21-773b75b3513b))
   (segment (start 23.1556 157.525) (end 21.194 159.4866) (width 0.76) (layer "F.Cu") (net 345) (tstamp a655189d-aa7c-4bd1-9d14-30ccd0306046))
   (segment (start 66.69 191.01) (end 64.93 192.77) (width 0.25) (layer "F.Cu") (net 345) (tstamp a8944846-174c-4b32-ab2d-4fc0c5b1277b))
   (segment (start 49.8666 75.4568) (end 49.8666 78.2) (width 0.13) (layer "F.Cu") (net 345) (tstamp aaf446f2-3491-4080-8fa9-c76e969cc6a4))
   (segment (start 49.8819 78.2153) (end 49.8666 78.2) (width 0.13) (layer "F.Cu") (net 345) (tstamp ab328c29-51e7-4a5f-914b-fc0d12d0453b))
+  (segment (start 26.0858 166.4462) (end 25.8318 166.7002) (width 0.25) (layer "F.Cu") (net 345) (tstamp b0513da7-5ceb-4849-937f-44e1b39c07fa))
   (segment (start 54.9338 81.6062) (end 55.41 81.13) (width 0.13) (layer "F.Cu") (net 345) (tstamp b2253be8-b8e2-4522-8a29-041bd014c5b5))
   (segment (start 51.698 78.184001) (end 49.882599 78.184001) (width 0.13) (layer "F.Cu") (net 345) (tstamp baf09345-c5dd-4663-9766-cce16d8f34cd))
   (segment (start 17.257 161.6101) (end 15.5552 161.6101) (width 0.76) (layer "F.Cu") (net 345) (tstamp bb373cfb-013b-4907-9d9b-539fc9a70eaa))
   (segment (start 55.873699 73.203699) (end 55.8636 73.1936) (width 0.13) (layer "F.Cu") (net 345) (tstamp bb6c5c5f-11fc-42b4-a63a-d372cebbe207))
   (segment (start 54.873701 79.8597) (end 54.873701 81.556101) (width 0.13) (layer "F.Cu") (net 345) (tstamp bb7c55c2-fc4a-4a87-8206-ca90a55da208))
-  (segment (start 54.25 192.73) (end 55.97 191.01) (width 0.25) (layer "F.Cu") (net 345) (tstamp bc64846a-3b2d-4951-a9b4-c61f68db2955))
   (segment (start 49.8666 75.3132) (end 49.8666 75.4568) (width 0.13) (layer "F.Cu") (net 345) (tstamp bcc5187f-f785-4882-89ee-117d1cba1473))
   (segment (start 33.2362 117.6398) (end 23.1556 127.7204) (width 0.76) (layer "F.Cu") (net 345) (tstamp c5d8743f-ca5d-424d-b2ae-ae2caf3ba33f))
+  (segment (start 54.25 192.73) (end 33.381 192.73) (width 0.25) (layer "F.Cu") (net 345) (tstamp d5d413f6-349d-4d28-9427-0b2cfbe3678c))
   (segment (start 54.9238 81.6062) (end 54.9338 81.6062) (width 0.13) (layer "F.Cu") (net 345) (tstamp dd972f0a-d27e-40f6-9827-622c3ac7c21c))
   (segment (start 33.2362 116.7108) (end 33.2362 117.6398) (width 0.13) (layer "F.Cu") (net 345) (tstamp e363dd24-52cc-4bb3-a23b-0c96e00afb02))
   (segment (start 25.8318 166.7002) (end 25.1968 166.0652) (width 0.25) (layer "F.Cu") (net 345) (tstamp e4e2015f-ad17-41d2-8ca6-f398a1cc88b1))
   (segment (start 55.873699 75.0083) (end 55.873699 73.203699) (width 0.13) (layer "F.Cu") (net 345) (tstamp e501cb20-d54c-4811-a48e-6231b5105db0))
+  (segment (start 33.381 192.73) (end 32.131 191.48) (width 0.25) (layer "F.Cu") (net 345) (tstamp ead0264a-f416-4556-8193-2e59cef54cf6))
   (segment (start 25.8318 167.1574) (end 25.219 167.7702) (width 0.25) (layer "F.Cu") (net 345) (tstamp f1c6624e-9270-4b7f-aaf6-059dd7be9782))
-  (segment (start 32.131 171.3992) (end 27.178 166.4462) (width 0.25) (layer "F.Cu") (net 345) (tstamp f20b42d9-4de2-445d-844b-31737e66a973))
   (segment (start 58.18 80.22) (end 58.18 75.01) (width 0.13) (layer "F.Cu") (net 345) (tstamp f376d83b-ef25-4ab7-b675-6973427d2135))
-  (segment (start 32.2782 192.73) (end 32.131 192.5828) (width 0.25) (layer "F.Cu") (net 345) (tstamp f6ffc16e-67c8-4195-b4e3-913e1b647f6f))
   (segment (start 20.813 158.9684) (end 20.4828 158.9684) (width 0.25) (layer "F.Cu") (net 345) (tstamp f7c49cba-418b-481e-81cd-998c4302d896))
   (segment (start 55.97 191.01) (end 57.73 192.77) (width 0.25) (layer "F.Cu") (net 345) (tstamp f927e165-6deb-4304-be1e-2fce6baeaf45))
   (segment (start 52.7256 73.1936) (end 52.3559 72.8239) (width 0.13) (layer "F.Cu") (net 345) (tstamp fbe02510-ad60-45fa-82d4-dc8b3d25594b))
