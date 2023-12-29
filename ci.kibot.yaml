@@ -317,7 +317,7 @@ outputs:
     comment: Individual layers in PDF format
     type: pdf
     dir: Individual_Layers/PDF
-    layers: []
+    layers: 'all'
   - name: basic_pdf_sch_print
     comment: Schematic in PDF format
     type: pdf_sch_print
@@ -356,7 +356,7 @@ outputs:
     comment: Individual layers in SVG format
     type: svg
     dir: Individual_Layers/SVG
-    layers: []
+    layers: 'all'
   - name: basic_svg_sch_print
     comment: Schematic in SVG format
     type: svg_sch_print
