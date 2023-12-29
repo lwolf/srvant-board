@@ -13842,9 +13842,6 @@
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "R53") (unit 1)
         )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "R53") (unit 1)
-        )
       )
       (project "srvant"
         (path "/556fa623-1b37-4e79-bae4-da8a8b5c51e2/e09acda0-94a3-4a08-aefe-d9a65d235818/cb303d0c-4933-420d-ac87-f65810081b5a"
@@ -13968,7 +13965,7 @@
     (property "Field7" "KOA EUROPE GMBH" (at 524.51 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Field6" "RK73G1ETQTP4700D         " (at 524.51 77.47 0)
+    (property "Field6" "RK73G1ETQTP4700D" (at 524.51 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Field8" "120887981" (at 524.51 77.47 0)
@@ -14014,9 +14011,6 @@
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "#PWR057") (unit 1)
         )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "#PWR041") (unit 1)
-        )
       )
       (project "srvant"
         (path "/556fa623-1b37-4e79-bae4-da8a8b5c51e2/e09acda0-94a3-4a08-aefe-d9a65d235818/cb303d0c-4933-420d-ac87-f65810081b5a"
@@ -14059,14 +14053,17 @@
     (property "Field8" "111893011" (at 109.22 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "digikey#" "490-14381-1-ND" (at 109.22 138.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "manf#" "GRM21BR71A106KA73L" (at 109.22 138.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 30d00623-2540-4458-ad1a-a73295a5b35e))
     (pin "2" (uuid d4f63948-a7f2-42b5-a22b-4bfd4373a518))
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "C77") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
           (reference "C77") (unit 1)
         )
       )
@@ -14340,9 +14337,6 @@
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "#PWR053") (unit 1)
         )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "#PWR053") (unit 1)
-        )
       )
       (project "srvant"
         (path "/556fa623-1b37-4e79-bae4-da8a8b5c51e2/e09acda0-94a3-4a08-aefe-d9a65d235818/cb303d0c-4933-420d-ac87-f65810081b5a"
@@ -14416,9 +14410,6 @@
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "#PWR059") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "#PWR041") (unit 1)
         )
       )
       (project "srvant"
@@ -14643,7 +14634,7 @@
     (property "Field7" "KOA EUROPE GMBH" (at 165.1 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Field6" "RK73G1ETQTP2201D         " (at 165.1 162.56 0)
+    (property "Field6" "RK73G1ETQTP2201D" (at 165.1 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Part Description" "Resistor 2.2K M1005 1% 63mW" (at 165.1 162.56 0)
@@ -14831,7 +14822,7 @@
   (symbol (lib_id "Device:FerriteBead_Small") (at 215.9 158.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 333f4ad8-c2d3-44c6-a0e5-a085bd9446ad)
-    (property "Reference" "FB6" (at 213.36 158.75 90)
+    (property "Reference" "FB9" (at 213.36 158.75 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "220R" (at 219.71 158.75 90)
@@ -14843,13 +14834,13 @@
     (property "Datasheet" "https://www.mouser.co.uk/datasheet/2/281/1/Murata_4_42023_QNFA9103SH-3135182.pdf" (at 215.9 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "manf#" "BLM15PX221SH1D " (at 215.9 158.75 0)
+    (property "manf#" "BLM15PX221SH1D" (at 215.9 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "digikey#" "" (at 215.9 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "mouser#" " 81-BLM15PX221SH1D " (at 215.9 158.75 0)
+    (property "mouser#" "81-BLM15PX221SH1D" (at 215.9 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "farnell#" "" (at 215.9 158.75 0)
@@ -14865,9 +14856,6 @@
     (pin "2" (uuid 0ea32aa4-92b0-4ca7-81ae-19372f9b42f1))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "FB6") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "FB9") (unit 1)
         )
@@ -14938,14 +14926,17 @@
     (property "Field8" "111893011" (at 27.94 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "digikey#" "490-14381-1-ND" (at 27.94 137.16 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "manf#" "GRM21BR71A106KA73L" (at 27.94 137.16 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid e8541024-8597-4de2-a5dc-c2536d8ed21b))
     (pin "2" (uuid 2c3c5dad-7a7c-4a8d-996d-909a946cd53c))
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "C70") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
           (reference "C70") (unit 1)
         )
       )
@@ -15085,7 +15076,7 @@
   (symbol (lib_id "Device:R") (at 487.68 204.47 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3f007672-7c3a-44f0-9da0-04064f801890)
-    (property "Reference" "R4" (at 490.22 203.2 90)
+    (property "Reference" "R56" (at 490.22 203.2 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10K" (at 487.68 201.93 90)
@@ -15122,15 +15113,6 @@
     (pin "2" (uuid 8f9d64a2-e2b1-47ef-bf93-515c26703a05))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "R4") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R25") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c5e8680e-893e-4673-a915-59c795b68a81"
-          (reference "R24") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "R56") (unit 1)
         )
@@ -15234,6 +15216,12 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Field8" "111893011" (at 466.09 264.16 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "digikey#" "490-14381-1-ND" (at 466.09 264.16 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "manf#" "GRM21BR71A106KA73L" (at 466.09 264.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 70c0783d-cc6e-4fbe-a358-8e44dbdcc97b))
@@ -15590,7 +15578,7 @@
     (property "Datasheet" "http://optoelectronics.liteon.com/upload/download/DS22-2000-226/LTST-S270KGKT.pdf" (at 264.414 265.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Field4" "Digikey " (at 264.414 265.43 0)
+    (property "Field4" "Digikey" (at 264.414 265.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Field5" "LTST-S270KGKT" (at 264.414 265.43 0)
@@ -15644,9 +15632,6 @@
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "#PWR068") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "#PWR041") (unit 1)
         )
       )
       (project "srvant"
@@ -16161,7 +16146,7 @@
   (symbol (lib_id "Device:R") (at 556.26 247.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 63c891a4-b5fb-4a98-ad1f-36d579e49f45)
-    (property "Reference" "R4" (at 556.26 248.92 90)
+    (property "Reference" "R74" (at 556.26 248.92 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "330R" (at 558.8 250.19 90)
@@ -16198,15 +16183,6 @@
     (pin "2" (uuid 9f703590-9bd6-48b5-999f-3ae5403c3bf0))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "R4") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R17") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c5e8680e-893e-4673-a915-59c795b68a81"
-          (reference "R74") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "R74") (unit 1)
         )
@@ -16243,7 +16219,7 @@
     (property "Field7" "KOA EUROPE GMBH" (at 524.51 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Field6" "RK73G1ETQTP4700D         " (at 524.51 72.39 0)
+    (property "Field6" "RK73G1ETQTP4700D" (at 524.51 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Field8" "120887981" (at 524.51 72.39 0)
@@ -16298,7 +16274,7 @@
     (property "rs#" "" (at 213.36 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Part Description" " GSB19110KEU" (at 213.36 146.05 0)
+    (property "Part Description" "GSB19110KEU" (at 213.36 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid b6f79c6e-6633-445d-8fed-fb2a730fda35))
@@ -16346,6 +16322,12 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Field8" "111893011" (at 464.82 238.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "digikey#" "490-14381-1-ND" (at 464.82 238.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "manf#" "GRM21BR71A106KA73L" (at 464.82 238.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 671ce726-6ca0-42a1-b52e-e84d813ef5ce))
@@ -16595,9 +16577,6 @@
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "#PWR041") (unit 1)
         )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "#PWR041") (unit 1)
-        )
       )
       (project "srvant"
         (path "/556fa623-1b37-4e79-bae4-da8a8b5c51e2/e09acda0-94a3-4a08-aefe-d9a65d235818/cb303d0c-4933-420d-ac87-f65810081b5a"
@@ -16831,9 +16810,6 @@
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "#PWR062") (unit 1)
         )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "#PWR041") (unit 1)
-        )
       )
       (project "srvant"
         (path "/556fa623-1b37-4e79-bae4-da8a8b5c51e2/e09acda0-94a3-4a08-aefe-d9a65d235818/cb303d0c-4933-420d-ac87-f65810081b5a"
@@ -16892,9 +16868,6 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "#PWR043") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
           (reference "#PWR043") (unit 1)
         )
       )
@@ -16987,9 +16960,6 @@
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "#PWR060") (unit 1)
         )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "#PWR041") (unit 1)
-        )
       )
       (project "srvant"
         (path "/556fa623-1b37-4e79-bae4-da8a8b5c51e2/e09acda0-94a3-4a08-aefe-d9a65d235818/cb303d0c-4933-420d-ac87-f65810081b5a"
@@ -17014,7 +16984,7 @@
     (property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&gotoUrl=https://www.ti.com/lit/gpn/sn74ahc1g04" (at 53.34 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "manf#" "SN74AHC1G04DBVRG4 " (at 53.34 162.56 0)
+    (property "manf#" "SN74AHC1G04DBVRG4" (at 53.34 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "digikey#" "" (at 53.34 162.56 0)
@@ -17039,9 +17009,6 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "U13") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
           (reference "U13") (unit 1)
         )
       )
@@ -17200,7 +17167,7 @@
   (symbol (lib_id "Device:R") (at 497.84 204.47 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8b23d866-2c43-4560-9d29-3120bbbdd7aa)
-    (property "Reference" "R4" (at 500.38 203.2 90)
+    (property "Reference" "R68" (at 500.38 203.2 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10K" (at 497.84 201.93 90)
@@ -17237,15 +17204,6 @@
     (pin "2" (uuid 70fb8118-8697-43a5-b995-7ce133ee880d))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "R4") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R25") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c5e8680e-893e-4673-a915-59c795b68a81"
-          (reference "R24") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "R68") (unit 1)
         )
@@ -17261,7 +17219,7 @@
   (symbol (lib_id "Device:R") (at 492.76 204.47 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 94b8f342-7adc-4cae-a7df-a4e6ce4f8055)
-    (property "Reference" "R4" (at 495.3 203.2 90)
+    (property "Reference" "R61" (at 495.3 203.2 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10K" (at 492.76 201.93 90)
@@ -17298,15 +17256,6 @@
     (pin "2" (uuid dd142b68-cb91-4440-8772-ff75d5fade21))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "R4") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "R25") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c5e8680e-893e-4673-a915-59c795b68a81"
-          (reference "R24") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "R61") (unit 1)
         )
@@ -17401,14 +17350,17 @@
     (property "Field8" "111893011" (at 129.54 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "digikey#" "490-14381-1-ND" (at 129.54 138.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "manf#" "GRM21BR71A106KA73L" (at 129.54 138.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 000decc2-a29d-49ca-ba39-6e1dba1cbe23))
     (pin "2" (uuid b9662c69-a610-465c-bb4d-935a7e528b92))
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "C81") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
           (reference "C81") (unit 1)
         )
       )
@@ -17471,9 +17423,6 @@
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "#PWR054") (unit 1)
         )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "#PWR054") (unit 1)
-        )
       )
       (project "srvant"
         (path "/556fa623-1b37-4e79-bae4-da8a8b5c51e2/e09acda0-94a3-4a08-aefe-d9a65d235818/cb303d0c-4933-420d-ac87-f65810081b5a"
@@ -17514,6 +17463,12 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Field8" "111893011" (at 464.82 287.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "digikey#" "490-14381-1-ND" (at 464.82 287.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "manf#" "GRM21BR71A106KA73L" (at 464.82 287.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 0bc65a13-e2da-4b64-8de4-163434e3b146))
@@ -17853,10 +17808,10 @@
     (property "Datasheet" "http://optoelectronics.liteon.com/upload/download/DS22-2000-210/LTST-S270KRKT.pdf" (at 452.12 368.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Field4" "Digikey " (at 452.12 368.3 0)
+    (property "Field4" "Digikey" (at 452.12 368.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Field5" "	LTST-S270KRKT" (at 452.12 368.3 0)
+    (property "Field5" "LTST-S270KRKT" (at 452.12 368.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Field6" "SML-A12U8TT86Q" (at 452.12 368.3 0)
@@ -17905,7 +17860,7 @@
     (property "Field4" "Mouser" (at 85.598 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Field5" "ECASD40J107M015K00 " (at 85.598 138.43 0)
+    (property "Field5" "ECASD40J107M015K00" (at 85.598 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Part Description" "Capacitor, SP-Cap, 100u, 6.3V, 15mR ESR" (at 85.598 138.43 0)
@@ -17916,9 +17871,6 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "C74") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
           (reference "C74") (unit 1)
         )
       )
@@ -18050,9 +18002,6 @@
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "#PWR045") (unit 1)
         )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "#PWR045") (unit 1)
-        )
       )
       (project "srvant"
         (path "/556fa623-1b37-4e79-bae4-da8a8b5c51e2/e09acda0-94a3-4a08-aefe-d9a65d235818/cb303d0c-4933-420d-ac87-f65810081b5a"
@@ -18077,10 +18026,10 @@
     (property "Datasheet" "http://optoelectronics.liteon.com/upload/download/DS22-2000-210/LTST-S270KRKT.pdf" (at 556.26 255.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Field4" "Digikey " (at 556.26 255.27 0)
+    (property "Field4" "Digikey" (at 556.26 255.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Field5" "	LTST-S270KRKT" (at 556.26 255.27 0)
+    (property "Field5" "LTST-S270KRKT" (at 556.26 255.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Field6" "SML-A12U8TT86Q" (at 556.26 255.27 0)
@@ -18117,9 +18066,6 @@
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "D10") (unit 1)
         )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "D3") (unit 1)
-        )
       )
       (project "srvant"
         (path "/556fa623-1b37-4e79-bae4-da8a8b5c51e2/e09acda0-94a3-4a08-aefe-d9a65d235818/4ef40d64-4bce-4f26-8bb0-6b5010a92d45"
@@ -18148,9 +18094,6 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "#PWR048") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
           (reference "#PWR048") (unit 1)
         )
       )
@@ -18195,7 +18138,7 @@
   (symbol (lib_id "74xGxx:74AHC1G08") (at 317.5 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c7cd9e0c-ca8e-4c2e-97c0-ef405b3dd4d1)
-    (property "Reference" "U25" (at 321.31 76.2 0)
+    (property "Reference" "U24" (at 321.31 76.2 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "74AHC1G08" (at 326.39 87.63 0)
@@ -18232,9 +18175,6 @@
     (pin "5" (uuid 0bdefab5-1a26-4c55-8c8c-4ce5ba27b78d))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "U25") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "U24") (unit 1)
         )
@@ -18275,14 +18215,17 @@
     (property "Field8" "111893011" (at 99.06 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "digikey#" "490-14381-1-ND" (at 99.06 138.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "manf#" "GRM21BR71A106KA73L" (at 99.06 138.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid aa1eac7c-7791-4c31-995a-a5ca39c78408))
     (pin "2" (uuid 5662f1ef-1310-4093-8644-9eaaa293198f))
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "C75") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
           (reference "C75") (unit 1)
         )
       )
@@ -18460,9 +18403,6 @@
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "#PWR047") (unit 1)
         )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "#PWR047") (unit 1)
-        )
       )
       (project "srvant"
         (path "/556fa623-1b37-4e79-bae4-da8a8b5c51e2/e09acda0-94a3-4a08-aefe-d9a65d235818/cb303d0c-4933-420d-ac87-f65810081b5a"
@@ -18484,7 +18424,7 @@
     (property "Footprint" "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" (at 208.788 49.022 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 208.788 49.022 0)
+    (property "Datasheet" "" (at 208.788 49.022 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Field6" "X32K768S301" (at 208.788 49.022 0)
@@ -18639,9 +18579,6 @@
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "#PWR052") (unit 1)
         )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "#PWR052") (unit 1)
-        )
       )
       (project "srvant"
         (path "/556fa623-1b37-4e79-bae4-da8a8b5c51e2/e09acda0-94a3-4a08-aefe-d9a65d235818/cb303d0c-4933-420d-ac87-f65810081b5a"
@@ -18702,9 +18639,6 @@
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "#PWR061") (unit 1)
         )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "#PWR041") (unit 1)
-        )
       )
       (project "srvant"
         (path "/556fa623-1b37-4e79-bae4-da8a8b5c51e2/e09acda0-94a3-4a08-aefe-d9a65d235818/cb303d0c-4933-420d-ac87-f65810081b5a"
@@ -18732,7 +18666,7 @@
     (property "Field4" "Digikey" (at 58.42 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Field5" "	31-AP22653W6-7CT-ND" (at 58.42 134.62 0)
+    (property "Field5" "31-AP22653W6-7CT-ND" (at 58.42 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Field6" "AP22653W6" (at 58.42 134.62 0)
@@ -18753,9 +18687,6 @@
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "U14") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
           (reference "U14") (unit 1)
         )
       )
@@ -18848,9 +18779,6 @@
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "#PWR050") (unit 1)
         )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "#PWR050") (unit 1)
-        )
       )
       (project "srvant"
         (path "/556fa623-1b37-4e79-bae4-da8a8b5c51e2/e09acda0-94a3-4a08-aefe-d9a65d235818/cb303d0c-4933-420d-ac87-f65810081b5a"
@@ -18927,7 +18855,7 @@
   (symbol (lib_id "Device:FerriteBead_Small") (at 560.07 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f0264f5d-76a4-4e30-b8dc-3fe74c91cc44)
-    (property "Reference" "FB6" (at 557.53 85.09 90)
+    (property "Reference" "FB8" (at 557.53 85.09 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "220R" (at 563.88 85.09 90)
@@ -18939,13 +18867,13 @@
     (property "Datasheet" "https://www.mouser.co.uk/datasheet/2/281/1/Murata_4_42023_QNFA9103SH-3135182.pdf" (at 560.07 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "manf#" "BLM15PX221SH1D " (at 560.07 85.09 0)
+    (property "manf#" "BLM15PX221SH1D" (at 560.07 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "digikey#" "" (at 560.07 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "mouser#" " 81-BLM15PX221SH1D " (at 560.07 85.09 0)
+    (property "mouser#" "81-BLM15PX221SH1D" (at 560.07 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "farnell#" "" (at 560.07 85.09 0)
@@ -18961,9 +18889,6 @@
     (pin "2" (uuid 58c5a68e-66fb-4ca0-9a50-5ec867c708e8))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
-          (reference "FB6") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
           (reference "FB8") (unit 1)
         )
@@ -19068,14 +18993,17 @@
     (property "Field8" "111893011" (at 119.38 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "digikey#" "490-14381-1-ND" (at 119.38 138.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "manf#" "GRM21BR71A106KA73L" (at 119.38 138.43 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid fe0d3707-b2b8-4cb6-80ce-0d44604678df))
     (pin "2" (uuid db6c977d-b3a8-46df-b65d-8ab22ffb8ea9))
     (instances
       (project "srvant-mk2"
         (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "C79") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
           (reference "C79") (unit 1)
         )
       )

@@ -28,11 +28,28 @@ preflight:
   # If you need to check the parity use the `update_xml` preflight.
   # KiCad 6 introduced `warnings` they are currently counted be the `unconnected` counter of KiBot.
   # This will change in the future.
-  # run_drc: true
+  #  run_drc: false
   # [boolean=false] Runs the ERC (Electrical Rules Check). To ensure the schematic is electrically correct.
   # The report file name is controlled by the global output pattern (%i=erc %x=txt).
-#  run_erc: true
-
+  #  run_erc: false
+  filters:
+    - filter: 'We know some connectors extend outside the board'
+      error: 'silk_over_copper'
+      regex: 'clipped by solder mask'
+  set_text_variables:
+    # The revision will be the short git hash
+    # We use ${git_hash} for the REV field in the worksheet (frame)
+    - name: 'git_hash'
+      command: 'git log -1 --format="%h" $KIBOT_PCB_NAME'
+      before: 'Git:'
+    # Coherent date and time for the schematic and PCB
+    # This will be the time stamp of the files generation, not the commit times
+    # We use `${date}` for the time field in the worksheet (frame)
+    - name: 'date'
+      command: 'date --iso-8601=minutes'
+    # TODO: move 3d models to the root level of the repo and populate from CI
+    - name: MK2_3D_MODELS
+      text: './kicad/mk2/srvant-mk2/3D'
 
 outputs:
   - name: basic_boardview
@@ -114,12 +131,12 @@ outputs:
         specs: true
         kicost_api_disable: KitSpace
       pre_transform: _kicost_rename
-
+#
 #  - name: basic_diff_pcb
 #    comment: PCB diff between the last two changes
 #    type: diff
 #    dir: diff
-#    layers: []
+#    layers: 'all'
 #    options:
 #      old: KIBOT_LAST-1
 #      old_type: git
@@ -127,7 +144,7 @@ outputs:
 #      new_type: git
 #      cache_dir: /work/.cache
 #      add_link_id: true
-
+#
 #  - name: basic_diff_sch
 #    comment: Schematic diff between the last two changes
 #    type: diff

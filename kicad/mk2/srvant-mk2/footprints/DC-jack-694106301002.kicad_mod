@@ -1,6 +1,6 @@
 (footprint "CONN3_01002_WRE" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tags "694106301002 ")
+  (tags "694106301002")
   (attr through_hole)
   (fp_text reference "REF**" (at -6.195999 0.1 unlocked) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))

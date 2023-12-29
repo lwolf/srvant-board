@@ -9290,7 +9290,7 @@
   (symbol (lib_id "Device:R") (at 222.25 133.35 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 03baf149-7364-4949-8da8-e0b5e906cfab)
-    (property "Reference" "R53" (at 215.9 134.62 90)
+    (property "Reference" "R62" (at 215.9 134.62 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0" (at 220.98 133.35 90)
@@ -9327,12 +9327,6 @@
     (pin "2" (uuid 0b47e024-1587-4ed6-8abc-cc46871229b7))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "R53") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "R53") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "R62") (unit 1)
         )
@@ -9348,7 +9342,7 @@
   (symbol (lib_id "power:GND") (at 269.24 41.91 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 04c75c9a-3874-406a-badb-f6550a0e39be)
-    (property "Reference" "#PWR058" (at 269.24 48.26 0)
+    (property "Reference" "#PWR028" (at 269.24 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 269.367 46.3042 0)
@@ -9363,9 +9357,6 @@
     (pin "1" (uuid 51f3b4da-c14e-4e03-b6ad-e64deb83e155))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "#PWR058") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "#PWR028") (unit 1)
         )
@@ -9528,7 +9519,7 @@
   (symbol (lib_id "Connector_Generic:Conn_02x05_Odd_Even") (at 373.38 81.28 0) (unit 1)
     (in_bom no) (on_board no) (dnp yes)
     (uuid 19e3deb2-949c-478c-b2c3-a9f5125cc550)
-    (property "Reference" "J6" (at 374.65 70.6882 0)
+    (property "Reference" "J7" (at 374.65 70.6882 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_02x05_Odd_Even" (at 374.65 72.9996 0)
@@ -9582,9 +9573,6 @@
     (pin "9" (uuid 87abcc36-cb73-456c-82a3-9a78fcae2ff7))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "J6") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "J7") (unit 1)
         )
@@ -9600,7 +9588,7 @@
   (symbol (lib_id "Device:R") (at 222.25 135.89 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1ad6b1c5-068d-477c-bcc5-30eda6ebc248)
-    (property "Reference" "R53" (at 215.9 137.16 90)
+    (property "Reference" "R63" (at 215.9 137.16 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0" (at 220.98 135.89 90)
@@ -9637,12 +9625,6 @@
     (pin "2" (uuid 917f1b91-0f33-4610-beb6-d216188c8dec))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "R53") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "R53") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "R63") (unit 1)
         )
@@ -9658,7 +9640,7 @@
   (symbol (lib_id "Device:C") (at 393.7 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1c3deca6-78a7-4f80-a213-ac46581d1cf2)
-    (property "Reference" "C9" (at 391.16 30.48 0)
+    (property "Reference" "C82" (at 391.16 30.48 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 392.43 35.56 0)
@@ -9679,7 +9661,7 @@
     (property "digikey#" "EMK105B7104KV-F" (at 393.7 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "mouser#" " 963-EMK105B7104KV-F" (at 393.7 33.02 0)
+    (property "mouser#" "963-EMK105B7104KV-F" (at 393.7 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "farnell#" "2611911" (at 393.7 33.02 0)
@@ -9692,9 +9674,6 @@
     (pin "2" (uuid 267cd9cc-e799-42a6-98c5-6692f7e56b03))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "C9") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "C82") (unit 1)
         )
@@ -9710,7 +9689,7 @@
   (symbol (lib_id "Device:R") (at 222.25 143.51 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1c4c8b7d-0dca-499d-a727-5c4a76af6b7f)
-    (property "Reference" "R53" (at 215.9 144.78 90)
+    (property "Reference" "R69" (at 215.9 144.78 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0" (at 220.98 143.51 90)
@@ -9747,12 +9726,6 @@
     (pin "2" (uuid 72bc7ee8-d61a-4ab7-af0a-c4a04b54220c))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "R53") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "R53") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "R69") (unit 1)
         )
@@ -9780,13 +9753,13 @@
     (property "Datasheet" "https://www.mouser.co.uk/datasheet/2/281/1/Murata_4_42023_QNFA9103SH-3135182.pdf" (at 264.16 264.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "manf#" "BLM15PX221SH1D " (at 264.16 264.16 0)
+    (property "manf#" "BLM15PX221SH1D" (at 264.16 264.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "digikey#" "" (at 264.16 264.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "mouser#" " 81-BLM15PX221SH1D " (at 264.16 264.16 0)
+    (property "mouser#" "81-BLM15PX221SH1D" (at 264.16 264.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "farnell#" "" (at 264.16 264.16 0)
@@ -9827,9 +9800,6 @@
     (pin "1" (uuid a5b12eab-ee73-4c1a-9457-d989ed7a64bc))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "#PWR012") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "#PWR012") (unit 1)
         )
@@ -9845,7 +9815,7 @@
   (symbol (lib_id "power:GND") (at 374.65 90.17 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1f08a3cc-a95c-4e71-a473-49ffeb18883e)
-    (property "Reference" "#PWR058" (at 374.65 96.52 0)
+    (property "Reference" "#PWR080" (at 374.65 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 374.777 94.5642 0)
@@ -9860,9 +9830,6 @@
     (pin "1" (uuid 94a6bd1e-bcd4-4bca-adf1-eb496f8b8494))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "#PWR058") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "#PWR080") (unit 1)
         )
@@ -9890,13 +9857,13 @@
     (property "Datasheet" "https://www.ti.com/lit/gpn/sn74lvc2g07" (at 259.08 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "manf#" "SN74LVC2G07DBVR " (at 259.08 41.91 0)
+    (property "manf#" "SN74LVC2G07DBVR" (at 259.08 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "digikey#" "" (at 259.08 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "mouser#" " 595-SN74LVC2G07DBVR " (at 259.08 41.91 0)
+    (property "mouser#" "595-SN74LVC2G07DBVR" (at 259.08 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "farnell#" "" (at 259.08 41.91 0)
@@ -9926,7 +9893,7 @@
   (symbol (lib_id "Device:R") (at 222.25 140.97 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 30502306-f850-4ed5-9d74-7b9b11379eca)
-    (property "Reference" "R53" (at 215.9 142.24 90)
+    (property "Reference" "R64" (at 215.9 142.24 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0" (at 220.98 140.97 90)
@@ -9963,12 +9930,6 @@
     (pin "2" (uuid c41fa533-ce7a-4b46-bff5-9ccdbff3c922))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "R53") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "R53") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "R64") (unit 1)
         )
@@ -9984,7 +9945,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 71.12 262.89 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 305be372-cc22-4f35-aa2f-8705e6ee0470)
-    (property "Reference" "TP3" (at 76.2 262.89 90)
+    (property "Reference" "TP19" (at 76.2 262.89 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "NMI_N" (at 71.8058 264.3632 0)
@@ -10029,9 +9990,6 @@
     (pin "1" (uuid 51bf20c8-9b33-404d-9421-70ca23102c18))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "TP3") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "TP19") (unit 1)
         )
@@ -10047,7 +10005,7 @@
   (symbol (lib_id "Device:R") (at 349.25 30.48 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 30f650ce-42e7-4e59-8154-54d13009ad6b)
-    (property "Reference" "R10" (at 347.98 30.48 90)
+    (property "Reference" "R72" (at 347.98 30.48 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "3.3K" (at 346.71 27.94 90)
@@ -10081,9 +10039,6 @@
     (pin "2" (uuid 8b419efe-8ae6-4afa-8611-b93dcff60b45))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "R10") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "R72") (unit 1)
         )
@@ -10103,7 +10058,7 @@
     (property "Footprint" "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" (at 30.48 257.302 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~{}" (at 30.48 257.302 0)
+    (property "Datasheet" "" (at 30.48 257.302 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Field6" "X32K768S301" (at 30.48 257.302 0)
@@ -10183,7 +10138,7 @@
   (symbol (lib_id "Device:R") (at 95.25 255.27 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 49285b33-2ae6-4961-985a-114aca11d3a5)
-    (property "Reference" "R10" (at 96.52 255.27 90)
+    (property "Reference" "R12" (at 96.52 255.27 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "3.3K" (at 97.79 257.81 90)
@@ -10217,9 +10172,6 @@
     (pin "2" (uuid 7038ece0-e0ba-4e77-850f-f57389de6aff))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "R10") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "R12") (unit 1)
         )
@@ -10453,7 +10405,7 @@
   (symbol (lib_id "power:GND") (at 245.11 49.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 510188c2-19b1-4e02-828b-c9b7bd829c83)
-    (property "Reference" "#PWR058" (at 245.11 55.88 0)
+    (property "Reference" "#PWR025" (at 245.11 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 245.237 53.9242 0)
@@ -10468,9 +10420,6 @@
     (pin "1" (uuid 66bf7c39-5cc0-406e-957a-6661d60b21dd))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "#PWR058") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "#PWR025") (unit 1)
         )
@@ -10535,7 +10484,7 @@
   (symbol (lib_id "Device:R") (at 213.36 50.8 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5657a804-53e0-48d5-9c23-48ff9b230f74)
-    (property "Reference" "R59" (at 214.5284 52.578 0)
+    (property "Reference" "R14" (at 214.5284 52.578 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1K" (at 212.217 52.578 0)
@@ -10569,9 +10518,6 @@
     (pin "2" (uuid e3974086-3083-4a72-bdd1-288223119242))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "R59") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "R14") (unit 1)
         )
@@ -10587,7 +10533,7 @@
   (symbol (lib_id "power:GND") (at 337.82 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5928cf62-1cb2-425f-b647-061610de2237)
-    (property "Reference" "#PWR058" (at 337.82 101.6 0)
+    (property "Reference" "#PWR086" (at 337.82 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 337.947 99.6442 0)
@@ -10602,9 +10548,6 @@
     (pin "1" (uuid 0aa9e81e-5127-4fba-b7a2-8a74ded36b1c))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "#PWR058") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "#PWR086") (unit 1)
         )
@@ -10725,7 +10668,7 @@
   (symbol (lib_id "Device:R") (at 222.25 146.05 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 74235aa4-cb76-47e2-a1fe-5b2f8b6a0946)
-    (property "Reference" "R53" (at 215.9 147.32 90)
+    (property "Reference" "R70" (at 215.9 147.32 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0" (at 220.98 146.05 90)
@@ -10762,12 +10705,6 @@
     (pin "2" (uuid 776530a8-b46d-4d93-a829-c7482cad75a3))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "R53") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "R53") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "R70") (unit 1)
         )
@@ -10795,13 +10732,13 @@
     (property "Datasheet" "https://www.ti.com/lit/gpn/sn74lvc2g07" (at 195.58 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "manf#" "SN74LVC2G07DBVR " (at 195.58 50.8 0)
+    (property "manf#" "SN74LVC2G07DBVR" (at 195.58 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "digikey#" "" (at 195.58 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "mouser#" " 595-SN74LVC2G07DBVR " (at 195.58 50.8 0)
+    (property "mouser#" "595-SN74LVC2G07DBVR" (at 195.58 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "farnell#" "" (at 195.58 50.8 0)
@@ -10899,7 +10836,7 @@
   (symbol (lib_id "Device:R") (at 349.25 33.02 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7a31c76a-f5ad-40cf-91cd-ab65a6aa9462)
-    (property "Reference" "R9" (at 347.98 33.02 90)
+    (property "Reference" "R71" (at 347.98 33.02 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "3.3K" (at 346.71 35.56 90)
@@ -10933,9 +10870,6 @@
     (pin "2" (uuid be63149b-053b-49c3-9329-f2c543fb852d))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "R9") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "R71") (unit 1)
         )
@@ -10961,9 +10895,6 @@
     (pin "1" (uuid c3848f62-5159-48b9-a77d-d8c9807c137f))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "#PWR058") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "#PWR058") (unit 1)
         )
@@ -11004,7 +10935,7 @@
   (symbol (lib_id "Device:R") (at 86.36 252.73 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 96ed09a3-60b0-4059-9e28-e59fc9c93581)
-    (property "Reference" "R9" (at 85.09 252.73 90)
+    (property "Reference" "R11" (at 85.09 252.73 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "3.3K" (at 83.82 250.19 90)
@@ -11038,9 +10969,6 @@
     (pin "2" (uuid 995c181b-612e-43a1-94f7-f6e3318f986c))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "R9") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "R11") (unit 1)
         )
@@ -11051,7 +10979,7 @@
   (symbol (lib_id "Device:LED") (at 226.06 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9bc4fce6-68d9-4caa-8b4d-31652dfe0d12)
-    (property "Reference" "D5" (at 227.33 53.34 0)
+    (property "Reference" "D4" (at 227.33 53.34 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED" (at 228.6 48.26 0)
@@ -11063,10 +10991,10 @@
     (property "Datasheet" "http://optoelectronics.liteon.com/upload/download/DS22-2000-210/LTST-S270KRKT.pdf" (at 226.06 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Field4" "Digikey " (at 226.06 50.8 0)
+    (property "Field4" "Digikey" (at 226.06 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Field5" "	LTST-S270KRKT" (at 226.06 50.8 0)
+    (property "Field5" "LTST-S270KRKT" (at 226.06 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Field6" "SML-A12U8TT86Q" (at 226.06 50.8 0)
@@ -11100,9 +11028,6 @@
     (pin "2" (uuid badd612e-6868-4a93-95f5-a1262ee7b155))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "D5") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "D4") (unit 1)
         )
@@ -11118,7 +11043,7 @@
   (symbol (lib_id "Device:R") (at 113.03 45.72 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9bdb6218-e4e8-4c4d-bfa4-5e7e35cdad78)
-    (property "Reference" "R53" (at 111.76 48.26 90)
+    (property "Reference" "R73" (at 111.76 48.26 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0" (at 111.76 45.72 90)
@@ -11155,12 +11080,6 @@
     (pin "2" (uuid 088924bc-699a-4243-9f66-a9d2df3e23ca))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "R53") (unit 1)
-        )
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "R53") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "R73") (unit 1)
         )
@@ -11176,7 +11095,7 @@
   (symbol (lib_id "Device:LED") (at 226.06 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a900323b-b874-40ba-b842-3d6f415be199)
-    (property "Reference" "D5" (at 227.33 35.56 0)
+    (property "Reference" "D3" (at 227.33 35.56 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED" (at 228.6 30.48 0)
@@ -11188,10 +11107,10 @@
     (property "Datasheet" "http://optoelectronics.liteon.com/upload/download/DS22-2000-210/LTST-S270KRKT.pdf" (at 226.06 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Field4" "Digikey " (at 226.06 33.02 0)
+    (property "Field4" "Digikey" (at 226.06 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Field5" "	LTST-S270KRKT" (at 226.06 33.02 0)
+    (property "Field5" "LTST-S270KRKT" (at 226.06 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Field6" "SML-A12U8TT86Q" (at 226.06 33.02 0)
@@ -11225,9 +11144,6 @@
     (pin "2" (uuid 1040c4de-ba28-49c5-b4d6-7eeb4c3ffec9))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "D5") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "D3") (unit 1)
         )
@@ -11294,7 +11210,7 @@
   (symbol (lib_id "Device:C") (at 245.11 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid af7a5e6d-1e34-4324-9a37-4af8237ea42c)
-    (property "Reference" "C9" (at 242.57 43.18 0)
+    (property "Reference" "C37" (at 242.57 43.18 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 243.84 48.26 0)
@@ -11315,7 +11231,7 @@
     (property "digikey#" "EMK105B7104KV-F" (at 245.11 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "mouser#" " 963-EMK105B7104KV-F" (at 245.11 45.72 0)
+    (property "mouser#" "963-EMK105B7104KV-F" (at 245.11 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "farnell#" "2611911" (at 245.11 45.72 0)
@@ -11328,9 +11244,6 @@
     (pin "2" (uuid 84e06417-cb84-41cc-b1e9-3279a7e768c6))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "C9") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "C37") (unit 1)
         )
@@ -11346,7 +11259,7 @@
   (symbol (lib_id "power:GND") (at 96.52 41.91 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid af95f87e-c70c-4fdb-be02-85d06d3049d2)
-    (property "Reference" "#PWR010" (at 96.52 48.26 0)
+    (property "Reference" "#PWR076" (at 96.52 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 96.52 46.99 0)
@@ -11361,9 +11274,6 @@
     (pin "1" (uuid b9a884c2-3de5-4d45-b423-3824a73f3690))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "#PWR010") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "#PWR076") (unit 1)
         )
@@ -11374,7 +11284,7 @@
   (symbol (lib_id "power:GND") (at 133.35 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c01695a4-dff1-425e-b485-b9cb752d5cdf)
-    (property "Reference" "#PWR010" (at 133.35 59.69 0)
+    (property "Reference" "#PWR074" (at 133.35 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 133.35 58.42 0)
@@ -11389,9 +11299,6 @@
     (pin "1" (uuid e2574ea2-f7bb-4d2d-9b17-ba165867b6a4))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "#PWR010") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "#PWR074") (unit 1)
         )
@@ -11458,13 +11365,13 @@
     (property "Datasheet" "https://www.ti.com/lit/gpn/sn74lvc2g07" (at 195.58 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "manf#" "SN74LVC2G07DBVR " (at 195.58 33.02 0)
+    (property "manf#" "SN74LVC2G07DBVR" (at 195.58 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "digikey#" "" (at 195.58 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "mouser#" " 595-SN74LVC2G07DBVR " (at 195.58 33.02 0)
+    (property "mouser#" "595-SN74LVC2G07DBVR" (at 195.58 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "farnell#" "" (at 195.58 33.02 0)
@@ -11635,7 +11542,7 @@
   (symbol (lib_id "Device:R") (at 213.36 33.02 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid df319db0-fcb2-43f8-95fd-c3e3f5f087e9)
-    (property "Reference" "R59" (at 214.5284 34.798 0)
+    (property "Reference" "R13" (at 214.5284 34.798 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1K" (at 212.217 34.798 0)
@@ -11669,9 +11576,6 @@
     (pin "2" (uuid 6a3c0a94-b10a-4df1-9645-56b9f54b5b90))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "R59") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "R13") (unit 1)
         )
@@ -11732,9 +11636,6 @@
     (pin "1" (uuid 32acecf3-62b6-4632-bb5e-23d940e4ffce))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "TP3") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "TP3") (unit 1)
         )
@@ -11956,7 +11857,7 @@
   (symbol (lib_id "power:GND") (at 59.69 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f4fb6d57-f17d-4b8f-8e07-33cccbd3dd3d)
-    (property "Reference" "#PWR010" (at 59.69 59.69 0)
+    (property "Reference" "#PWR078" (at 59.69 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 59.69 58.42 0)
@@ -11971,9 +11872,6 @@
     (pin "1" (uuid 953e0f63-8d52-4411-9381-edc7cac2a136))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/c300a602-5caa-44c4-bd60-e0bac469451e"
-          (reference "#PWR010") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "#PWR078") (unit 1)
         )
@@ -11984,7 +11882,7 @@
   (symbol (lib_id "power:GND") (at 388.62 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f7f27de0-c1bf-4cec-a501-57246b699e17)
-    (property "Reference" "#PWR058" (at 388.62 50.8 0)
+    (property "Reference" "#PWR055" (at 388.62 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 388.747 48.8442 0)
@@ -11999,9 +11897,6 @@
     (pin "1" (uuid 8da1780c-9308-4e9c-a11a-d03008414b82))
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "#PWR058") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
           (reference "#PWR055") (unit 1)
         )

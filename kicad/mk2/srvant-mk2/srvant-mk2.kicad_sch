@@ -214,7 +214,7 @@
   (symbol (lib_id "Mechanical:MountingHole") (at 392.43 240.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0478ed5f-8eb9-40b2-85ec-3573e968c620)
-    (property "Reference" "H3" (at 394.97 238.887 0)
+    (property "Reference" "H7" (at 394.97 238.887 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole" (at 394.97 241.173 0)
@@ -243,9 +243,6 @@
     )
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "H3") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146"
           (reference "H7") (unit 1)
         )
@@ -261,7 +258,7 @@
   (symbol (lib_id "Mechanical:MountingHole") (at 401.32 246.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b1dd1197-a726-4916-8f39-b1cfa726f2a9)
-    (property "Reference" "H3" (at 403.86 245.237 0)
+    (property "Reference" "H4" (at 403.86 245.237 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole" (at 403.86 247.523 0)
@@ -290,9 +287,6 @@
     )
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "H3") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146"
           (reference "H4") (unit 1)
         )
@@ -308,7 +302,7 @@
   (symbol (lib_id "Mechanical:MountingHole") (at 401.32 240.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ba31a2e2-daca-4074-b3fb-5435a4d78ebf)
-    (property "Reference" "H3" (at 403.86 238.887 0)
+    (property "Reference" "H6" (at 403.86 238.887 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole" (at 403.86 241.173 0)
@@ -337,9 +331,6 @@
     )
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "H3") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146"
           (reference "H6") (unit 1)
         )
@@ -355,7 +346,7 @@
   (symbol (lib_id "Mechanical:MountingHole") (at 392.43 246.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c84d1936-3d26-478d-8dfd-9704e6625beb)
-    (property "Reference" "H3" (at 394.97 245.237 0)
+    (property "Reference" "H5" (at 394.97 245.237 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole" (at 394.97 247.523 0)
@@ -384,9 +375,6 @@
     )
     (instances
       (project "srvant-mk2"
-        (path "/1859a578-b791-4142-bdf4-fda494df1146/75d0860a-7ab5-4d7d-b96d-9266ebc33987"
-          (reference "H3") (unit 1)
-        )
         (path "/1859a578-b791-4142-bdf4-fda494df1146"
           (reference "H5") (unit 1)
         )
