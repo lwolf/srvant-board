@@ -1,11 +1,17 @@
 # srvant-board
 
+| :warning: WARNING          |
+|:---------------------------|
+| This is a work-in-progress. No final board have been produced yet. Any part of the schematic and/or PCB could be wrong.|
+
+
 Design of the carrier board for the Raspberry Pi CM4. The main distinction from existing boards is the presence of the 
 BMC (Baseboard Management Controller) which supposed to monitor and control the HOST, allowing the board to act as a real "server".
 
 ![board-3d.png](media%2Fboard-3d.png)
 
-Highlevel design / idea:
+## Highlevel design / idea:
+
 BMC using lots of GPIO controls the HOST: power cycle, terminal access, switches USB into OTG for flushing.
 ![diagram.png](media%2Fdiagram.png)
 
