@@ -10129,7 +10129,7 @@
     (property "Value" "rp-t113-s3" (at 27.94 93.98 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "rp-t113-s3:rp-t113-s3" (at 5.08 41.91 0)
+    (property "Footprint" "footprints:rp-t113-s3" (at 5.08 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://linux-sunxi.org/images/7/73/T113-s3_datasheet_v1.6.pdf" (at 5.08 41.91 0)

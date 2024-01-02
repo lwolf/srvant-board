@@ -11,8 +11,6 @@ on:
         required: false
         default: 'Manual test run'
 
-
-
 jobs:
   release:
     runs-on: ubuntu-latest
