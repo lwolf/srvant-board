@@ -37,6 +37,9 @@ preflight:
     - filter: 'For some reason kibot shows this warning, but kicad doesnt.'
       error: 'track_dangling'
       regex: 'Track has unconnected end'
+    - filter: "ignore kicad7 errors when 3d models are added"
+      error: 'lib_footprint_mismatch'
+      regex: "Footprint doesn't match copy in library"
   set_text_variables:
     # The revision will be the short git hash
     # We use ${git_hash} for the REV field in the worksheet (frame)
