@@ -1,0 +1,527 @@
+kibot:
+  version: 1
+
+global:
+  filters:
+    - number: 1007
+    - number: 1015
+    - number: 58
+
+import:
+  - file: JLCPCB
+    definitions:
+      _KIBOT_MANF_DIR: Manufacturers/JLCPCB
+      _KIBOT_POS_PRE_TRANSFORM: '[''_kicost_rename'', ''_rot_footprint'']'
+      _KIBOT_BOM_ENABLED: 'false'
+
+preflight:
+  check_zone_fills: true
+  # [boolean=false] Option for `run_erc`. ERC warnings are considered errors.
+  erc_warnings: false
+  # [boolean=false] Fill all zones again and save the PCB.
+  fill_zones: true
+  # [boolean=false] Runs the DRC (Distance Rules Check). To ensure we have a valid PCB.
+  # The report file name is controlled by the global output pattern (%i=drc %x=txt).
+  # Note that the KiCad 6+ *Test for parity between PCB and schematic* option is not supported.
+  # If you need to check the parity use the `update_xml` preflight.
+  # KiCad 6 introduced `warnings` they are currently counted be the `unconnected` counter of KiBot.
+  # This will change in the future.
+  run_drc: true
+  # [boolean=false] Runs the ERC (Electrical Rules Check). To ensure the schematic is electrically correct.
+  # The report file name is controlled by the global output pattern (%i=erc %x=txt).
+  run_erc: false
+  filters:
+    - filter: 'We know some connectors extend outside the board'
+      error: 'silk_over_copper'
+      regex: 'clipped by solder mask'
+    - filter: 'For some reason kibot shows this warning, but kicad doesnt.'
+      error: 'track_dangling'
+      regex: 'Track has unconnected end'
+  set_text_variables:
+    # The revision will be the short git hash
+    # We use ${git_hash} for the REV field in the worksheet (frame)
+    - name: 'git_hash'
+      command: 'git log -1 --format="%h" $KIBOT_PCB_NAME'
+      before: 'Git:'
+    # Coherent date and time for the schematic and PCB
+    # This will be the time stamp of the files generation, not the commit times
+    # We use `${date}` for the time field in the worksheet (frame)
+    - name: 'date'
+      command: 'date --iso-8601=minutes'
+    # TODO: move 3d models to the root level of the repo and populate from CI
+    - name: MK2_3D_MODELS
+      text: './kicad/mk2/srvant-mk2/3D'
+outputs:
+  - name: basic_diff_pcb
+    comment: PCB diff between the last two changes
+    type: diff
+    dir: diff
+    layers: 'all'
+    options:
+      old: KIBOT_TAG-1
+      old_type: git
+      new: HEAD
+      new_type: git
+      cache_dir: /work/.cache
+      add_link_id: true
+
+  - name: basic_diff_sch
+    comment: Schematic diff between the last two changes
+    type: diff
+    dir: diff
+    options:
+      old: KIBOT_TAG-1
+      old_type: git
+      new: HEAD
+      new_type: git
+      cache_dir: /kikit/.cache
+      add_link_id: true
+      pcb: false
+
+# TODO: choose prefered BOM mode, and remove others
+  - name: basic_boardview
+    comment: Board View export
+    type: boardview
+    dir: Assembly
+  - name: generic_bom_html
+    comment: Generic Bill of Materials in HTML format
+    type: bom
+    dir: BoM/Generic
+    options:
+      format: HTML
+      count_smd_tht: true
+  - name: generic_bom_csv
+    comment: Generic Bill of Materials in CSV format
+    type: bom
+    dir: BoM/Generic
+    options:
+      format: CSV
+      count_smd_tht: true
+  - name: generic_bom_hrtxt
+    comment: Generic Bill of Materials in HRTXT format
+    type: bom
+    dir: BoM/Generic
+    options:
+      format: HRTXT
+      hrtxt:
+        separator: '|'
+      count_smd_tht: true
+  - name: generic_bom_xlsx
+    comment: Generic Bill of Materials in XLSX format
+    type: bom
+    dir: BoM/Generic
+    options:
+      format: XLSX
+      count_smd_tht: true
+  - name: positional_bom_html
+    comment: Positional Bill of Materials in HTML format
+    type: bom
+    dir: BoM/Positional
+    options:
+      format: HTML
+      columns: &id001
+        - Row
+        - Description
+        - Part
+        - Part Lib
+        - References
+        - Value
+        - Footprint
+        - Footprint Lib
+        - Quantity Per PCB
+        - Build Quantity
+        - Status
+        - Datasheet
+        - Sheetpath
+        - Source BoM
+        - Footprint X
+        - Footprint Y
+        - Footprint Rot
+        - Footprint Side
+        - Footprint Type
+        - Footprint Populate
+        - Footprint X-Size
+        - Footprint Y-Size
+      count_smd_tht: true
+      html:
+        style: modern-red
+  - name: costs_bom_xlsx
+    comment: Costs Bill of Materials in XLSX format
+    type: bom
+    dir: BoM/Costs
+    options:
+      format: XLSX
+      count_smd_tht: true
+      xlsx:
+        style: modern-green
+        kicost: true
+        specs: true
+        kicost_api_disable: KitSpace
+      pre_transform: _kicost_rename
+  - name: basic_ibom
+    comment: Interactive HTML BoM
+    type: ibom
+    dir: Assembly
+
+  - name: gerber_modern
+    comment: Gerbers in modern format, recommended by the standard
+    type: gerber
+    dir: Gerbers_and_Drill
+    layers: []
+
+  - name: basic_info
+    comment: Information about the run
+    type: info
+    dir: .
+  - name: basic_kikit_present
+    comment: Simple project presentation
+    type: kikit_present
+    dir: Presentation
+    options:
+      description: '# Presentation for srvant-mk2
+
+      This is an automatically generated presentation page'
+      boards:
+        mode: local
+        comment: Resources included
+        front_image: renderer_for_present
+        back_image: renderer_for_present
+        gerbers: gerbers_for_present
+  - name: renderer_for_present
+    comment: Renderer for the presentation
+    type: pcbdraw
+    dir: Render_for_presentation
+    run_by_default: false
+  - name: gerbers_for_present
+    comment: Gerbers for the presentation
+    type: gerber
+    dir: Gerber_for_presentation
+    layers: copper
+    run_by_default: false
+  - name: basic_navigate_results
+    comment: Web page to browse the results
+    type: navigate_results
+    dir: Browse
+    options:
+      link_from_root: index.html
+      skip_not_run: true
+  - name: classic_netlist
+    comment: Schematic netlist in KiCad format
+    type: netlist
+    dir: Export
+  - name: ipc_netlist
+    comment: IPC-D-356 netlist for testing
+    type: netlist
+    dir: Export
+    options:
+      format: ipc
+  - name: basic_pcb_print_pdf
+    comment: PCB
+    type: pcb_print
+    dir: PCB/PDF
+    options:
+      format: PDF
+      scaling: 0
+      autoscale_margin_x: 50
+      autoscale_margin_y: 25
+      output: '%f%v-PCB.%x'
+      keep_temporal_files: true
+      plot_sheet_reference: false
+      pages:
+        - layers:
+            - layer: F.Silkscreen
+            - layer: Edge.Cuts
+          sheet: Silk
+        - layers:
+            - layer: User.Drawings
+            - layer: Edge.Cuts
+          sheet: Drawings
+        - layers:
+            - layer: F.Cu
+            - layer: F.Mask
+              color: '#14332440'
+            - layer: F.Paste
+            - layer: F.Silkscreen
+            - layer: Edge.Cuts
+          sheet: Front copper
+        - layers:
+            - layer: B.Cu
+            - layer: B.Mask
+              color: '#14332440'
+            - layer: Edge.Cuts
+          mirror: true
+          sheet: Bottom copper
+  - name: basic_pdf
+    comment: Individual layers in PDF format
+    type: pdf
+    dir: Individual_Layers/PDF
+    layers: 'all'
+  - name: basic_pdf_sch_print
+    comment: Schematic in PDF format
+    type: pdf_sch_print
+    dir: Schematic
+  - name: report_simple
+    comment: Simple design report
+    type: report
+    output_id: _simple
+    options:
+      template: simple_ASCII
+  - name: report_full
+    comment: Full design report
+    type: report
+    options:
+      template: full_SVG
+  - name: basic_stencil_3d
+    comment: 3D self-registering stencil
+    type: stencil_3d
+    dir: Assembly
+
+  # Design report:
+  # Mainly oriented to be sent to the manufacturer or check PCB details.
+  # You can expand internal values, KiCad text variables and environment
+  # variables using `${VARIABLE}`
+  - name: 'report'
+    comment: 'Generates a report about the design.'
+    type: 'report'
+    dir: 'report_dir'
+    options:
+      # [string='markdown'] Original format for the report conversion. Current templates are `markdown`. See `do_convert`
+      convert_from: 'markdown'
+      # [string='pdf'] Target format for the report conversion. See `do_convert`
+      convert_to: 'pdf'
+      # [string='%f-%i%I%v.%x'] Converted output file name (%i='report', %x=`convert_to`).
+      # Note that the extension should match the `convert_to` value. Affected by global options
+      converted_output: '%f-%i%I%v.%x'
+      # [boolean=false] Run `Pandoc` to convert the report. Note that Pandoc must be installed.
+      # The conversion is done assuming the report is in `convert_from` format.
+      # The output file will be in `convert_to` format.
+      # The available formats depends on the `Pandoc` installation.
+      # In CI/CD environments: the `kicad_auto_test` docker image contains it.
+      # In Debian/Ubuntu environments: install `pandoc`, `texlive`, `texlive-latex-base` and `texlive-latex-recommended`
+      do_convert: false
+      # [string='10F'] Which Eurocircuits class are we aiming at
+      eurocircuits_class_target: '10F'
+      # [number=0.45] When computing the Eurocircuits category: Final holes sizes smaller or equal to this given
+      # diameter can be reduced to accommodate the correct annular ring values.
+      # Use 0 to disable it
+      eurocircuits_reduce_holes: 0.45
+      # [string='%f-%i%I%v.%x'] Output file name (%i='report', %x='txt'). Affected by global options
+      output: '%f-%i%I%v.%x'
+      # [string='full'] Name for one of the internal templates (full, full_svg, simple) or a custom template file.
+      # Environment variables and ~ are allowed.
+      # Note: when converting to PDF PanDoc can fail on some Unicode values (use `simple_ASCII`)
+      template: 'full'
+
+  # 3D render of the PCB:
+  - name: 'render_3d_example'
+    comment: "Exports the image generated by KiCad's 3D viewer."
+    type: 'render_3d'
+    dir: 'render_3d_dir'
+    options:
+      # [boolean=false] When enabled the image will be post-processed to remove the empty space around the image.
+      # In this mode the `background2` is changed to be the same as `background1`
+      auto_crop: false
+      # [string='#66667F'] First color for the background gradient
+      background1: '#66667F'
+      # [string='#CCCCE5'] Second color for the background gradient
+      background2: '#CCCCE5'
+      # [string='#332B16'] Color for the board without copper or solder mask
+      board: '#332B16'
+      # [boolean=true] Clip silkscreen at via annuli (KiCad 6+)
+      clip_silk_on_via_annulus: true
+      # [string='#8b898c'] Color for the copper
+      copper: '#8b898c'
+      # [string|list(string)='_none'] Name of the filter to mark components as not fitted.
+      # A short-cut to use for simple cases where a variant is an overkill
+      dnf_filter: '_none'
+      # [boolean=true] Downloads missing 3D models from KiCad git.
+      # Only applies to models in KISYS3DMOD and KICAD6_3DMODEL_DIR.
+      # They are downloaded to a temporal directory and discarded.
+      # If you want to cache the downloaded files specify a directory using the
+      # KIBOT_3D_MODELS environment variable
+      download: true
+      # [number=720] Image height (aprox.)
+      height: 720
+      # [list(string)=[]] List of components to highlight
+      highlight: []
+      # [boolean=false] Highlight over the component (not under)
+      highlight_on_top: false
+      # [number=1.5] [0,1000] How much the highlight extends around the component [mm]
+      highlight_padding: 1.5
+      # [string='https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/'] Base URL for the KiCad 3D models
+      kicad_3d_url: 'https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/'
+      # [string=''] Text added to the end of the download URL.
+      # Can be used to pass variables to the GET request, i.e. ?VAR1=VAL1&VAR2=VAL2
+      kicad_3d_url_suffix: ''
+      # [number=0] Steps to move in the X axis, positive is to the right.
+      # Just like pressing the right arrow in the 3D viewer
+      move_x: 0
+      # [number=0] Steps to move in the Y axis, positive is up.
+      # Just like pressing the up arrow in the 3D viewer
+      move_y: 0
+      # [boolean=false] Used to exclude 3D models for surface mount components
+      no_smd: false
+      # [boolean=false] Used to exclude 3D models for through hole components
+      no_tht: false
+      # [boolean=false] Used to exclude 3D models for components with 'virtual' attribute
+      no_virtual: false
+      # [boolean=false] Enable the orthographic projection mode (top view looks flat)
+      orthographic: false
+      # [string='%f-%i%I%v.%x'] Name for the generated image file (%i='3D_$VIEW' %x='png'). Affected by global options
+      output: '%f-%i%I%v.%x'
+      # [string|list(string)='_none'] Name of the filter to transform fields before applying other filters.
+      # A short-cut to use for simple cases where a variant is an overkill
+      pre_transform: '_none'
+      # [boolean=false] Enable the ray tracing. Much better result, but slow, and you'll need to adjust `wait_rt`
+      ray_tracing: false
+      # [boolean=true] When disabled we use the colors of the layers used by the GUI. KiCad 6 or newer
+      realistic: true
+      # [number=0] Steps to rotate around the X axis, positive is clockwise.
+      # Each step is currently 10 degrees. Only for KiCad 6 or newer
+      rotate_x: 0
+      # [number=0] Steps to rotate around the Y axis, positive is clockwise.
+      # Each step is currently 10 degrees. Only for KiCad 6 or newer
+      rotate_y: 0
+      # [number=0] Steps to rotate around the Z axis, positive is clockwise.
+      # Each step is currently 10 degrees. Only for KiCad 6 or newer
+      rotate_z: 0
+      # [boolean=false] Show the content of F.Adhesive/B.Adhesive layers. KiCad 6 or newer
+      show_adhesive: false
+      # [boolean=true] Show the PCB core material. KiCad 6 or newer
+      show_board_body: true
+      # [boolean=false] Show the content of the User.Comments layer. KiCad 6 or newer and ray tracing disabled
+      show_comments: false
+      # [list(string)|string=all] [none,all] List of components to draw, can be also a string for `none` or `all`.
+      # Unlike the `pcbdraw` output, the default is `all`
+      show_components: all
+      # [boolean=false] Show the content of the Eco1.User/Eco2.User layers. KiCad 6 or newer and ray tracing disabled
+      show_eco: false
+      # [boolean=true] Show the silkscreen layers (KiCad 6+)
+      show_silkscreen: true
+      # [boolean=true] Show the solder mask layers (KiCad 6+)
+      show_soldermask: true
+      # [boolean=true] Show the solder paste layers (KiCad 6+)
+      show_solderpaste: true
+      # [boolean=true] Show filled areas in zones (KiCad 6+)
+      show_zones: true
+      # [string='#d5dce4'] Color for the silk screen
+      silk: '#d5dce4'
+      # [string='#208b47'] Color for the solder mask
+      solder_mask: '#208b47'
+      # [string='#808080'] Color for the solder paste
+      solder_paste: '#808080'
+      # [boolean=true] Clip silkscreen at solder mask edges (KiCad 6+)
+      subtract_mask_from_silk: true
+      # [boolean=false] When enabled the image will be post-processed to make the background transparent.
+      # In this mode the `background1` and `background2` colors are ignored
+      transparent_background: false
+      # [string='#00ff00'] Color used for the chroma key. Adjust it if some regions of the board becomes transparent
+      transparent_background_color: '#00ff00'
+      # [number=15] [0,100] Chroma key tolerance (percent). Bigger values will remove more pixels
+      transparent_background_fuzz: 15
+      # [string=''] Board variant to apply
+      variant: ''
+      # [string='top'] [top,bottom,front,rear,right,left,z,Z,y,Y,x,X] Point of view
+      view: 'top'
+      # `wait_ray_tracing` is an alias for `wait_render`
+      # [number=-600] How many seconds we must wait before capturing the render (ray tracing or normal).
+      # Lamentably KiCad can save an unfinished image. Enlarge it if your image looks partially rendered.
+      # Use negative values to enable the auto-detect using CPU load.
+      # In this case the value is interpreted as a time-out.
+      wait_render: -600
+      # [number=1280] Image width (aprox.)
+      width: 1280
+      # [number=0] Zoom steps. Use positive to enlarge, get closer, and negative to reduce.
+      # Same result as using the mouse wheel in the 3D viewer
+      zoom: 0
+
+  - name: basic_step
+    comment: 'Exports the PCB as a 3D model.'
+    type: step
+    dir: 3D
+    options:
+      # [string|list(string)='_none'] Name of the filter to mark components as not fitted.
+      # A short-cut to use for simple cases where a variant is an overkill
+      dnf_filter: '_none'
+      # [boolean=true] Downloads missing 3D models from KiCad git.
+      # Only applies to models in KISYS3DMOD and KICAD6_3DMODEL_DIR.
+      # They are downloaded to a temporal directory and discarded.
+      # If you want to cache the downloaded files specify a directory using the
+      # KIBOT_3D_MODELS environment variable
+      download: true
+      # [string='https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/'] Base URL for the KiCad 3D models
+      kicad_3d_url: 'https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/'
+      # [string=''] Text added to the end of the download URL.
+      # Can be used to pass variables to the GET request, i.e. ?VAR1=VAL1&VAR2=VAL2
+      kicad_3d_url_suffix: ''
+      # [boolean=true] Use metric units instead of inches
+      metric_units: true
+      # [number=-1] The minimum distance between points to treat them as separate ones (-1 is KiCad default: 0.01 mm)
+      min_distance: -1
+      # [boolean=false] Used to exclude 3D models for components with 'virtual' attribute
+      no_virtual: false
+      # [string='grid'] Determines the coordinates origin. Using grid the coordinates are the same as you have in the design sheet.
+      # The drill option uses the auxiliary reference defined by the user.
+      # You can define any other origin using the format 'X,Y', i.e. '3.2,-10'
+      origin: 'grid'
+      # [string='%f-%i%I%v.%x'] Name for the generated STEP file (%i='3D' %x='step'). Affected by global options
+      output: '%f-%i%I%v.%x'
+      # [string|list(string)='_none'] Name of the filter to transform fields before applying other filters.
+      # A short-cut to use for simple cases where a variant is an overkill
+      pre_transform: '_none'
+      # [boolean=true] Substitute STEP or IGS models with the same name in place of VRML models
+      subst_models: true
+      # [string=''] Board variant to apply
+      variant: ''
+  # Steel Stencils for Alignment Jig:
+  # These stencils are designed to be used with an acrilic alignment jig and a 3D
+  # printable support, that is also generated.
+  # [KiKit docs](https://github.com/yaqwsx/KiKit/blob/master/doc/stencil.md).
+  # Note that we don't implement `--ignore` option, you should use a variant for this
+  - name: 'stencil_for_jig'
+    comment: 'Creates the gerber files needed to create steel stencils.'
+    type: 'stencil_for_jig'
+    dir: 'stencil_for_jig_dir'
+    options:
+      # [boolean=true] Creates a PNG showing the generated 3D model
+      create_preview: true
+      # [string|list(string)] List of components to add a cutout based on the component courtyard.
+      # This is useful when you have already pre-populated board and you want to populate more
+      # components
+      cutout: ''
+      # [string|list(string)='_none'] Name of the filter to mark components as not fitted.
+      # A short-cut to use for simple cases where a variant is an overkill
+      dnf_filter: '_none'
+      # [boolean=true] Include the generated OpenSCAD files
+      include_scad: true
+      # `jig_height` is an alias for `jigheight`
+      # `jig_thickness` is an alias for `jigthickness`
+      # `jig_width` is an alias for `jigwidth`
+      # [number=100] Jig frame height [mm]
+      jigheight: 100
+      # [number=3] Jig thickness [mm]
+      jigthickness: 3
+      # [number=100] Jig frame width [mm]
+      jigwidth: 100
+      # [string='%f-%i%I%v.%x'] Filename for the output (%i='stencil_for_jig_top'|'stencil_for_jig_bottom',
+      # %x='stl'|'scad'|'gbp'|'gtp'|'gbrjob'|'png'). Affected by global options
+      output: '%f-%i%I%v.%x'
+      # `pcb_thickness` is an alias for `pcbthickness`
+      # [number=0] PCB thickness [mm]. If 0 we will ask KiCad
+      pcbthickness: 0
+      # [string|list(string)='_none'] Name of the filter to transform fields before applying other filters.
+      # A short-cut to use for simple cases where a variant is an overkill
+      pre_transform: '_none'
+      # `register_border_inner` is an alias for `registerborderinner`
+      # `register_border_outer` is an alias for `registerborderouter`
+      # [number=1] Inner register border [mm]
+      registerborderinner: 1
+      # [number=3] Outer register border [mm]
+      registerborderouter: 3
+      # [string='auto'] [top,bottom,auto,both] Which side of the PCB we want. Using `auto` will detect which
+      # side contains solder paste
+      side: 'auto'
+      # [number=0.05] Enlarges the register by the tolerance value [mm]
+      tolerance: 0.05
+      # [string=''] Board variant to apply
+      variant: ''

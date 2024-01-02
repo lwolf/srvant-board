@@ -1,0 +1,40 @@
+name: Generate Gerber files
+
+on:
+  push:
+    paths:
+      - 'kicad/mk2/srvant-mk2/*.kicad_sch'
+      - 'kicad/mk2/srvant-mk2/*.kicad_pcb'
+      - '.github/**.yml'
+      - 'kibot-test.yaml'
+  pull_request:
+    paths:
+      - 'kicad/mk2/srvant-mk2/*.kicad_sch'
+      - 'kicad/mk2/srvant-mk2/*.kicad_pcb'
+      - '.github/**.yml'
+      - 'kibot-test.yaml'
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Workflow run name'
+        required: false
+        default: 'Manual test run'
+
+
+
+jobs:
+  on_commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: INTI-CMNB/KiBot@v2_k7
+        with:
+          config: kibot-quick.yaml
+          dir: output
+          schema: 'kicad/mk2/srvant-mk2/srvant-mk2.kicad_sch'
+          board: 'kicad/mk2/srvant-mk2/srvant-mk2.kicad_pcb'
+      - name: upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: output
+          path: output

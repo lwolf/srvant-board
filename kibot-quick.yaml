@@ -1,0 +1,111 @@
+kibot:
+  version: 1
+
+global:
+  filters:
+    - number: 1007
+    - number: 1015
+    - number: 58
+
+preflight:
+  check_zone_fills: true
+  # [boolean=false] Option for `run_erc`. ERC warnings are considered errors.
+  erc_warnings: false
+  # [boolean=false] Fill all zones again and save the PCB.
+  fill_zones: true
+  # [boolean=false] Runs the DRC (Distance Rules Check). To ensure we have a valid PCB.
+  # The report file name is controlled by the global output pattern (%i=drc %x=txt).
+  # Note that the KiCad 6+ *Test for parity between PCB and schematic* option is not supported.
+  # If you need to check the parity use the `update_xml` preflight.
+  # KiCad 6 introduced `warnings` they are currently counted be the `unconnected` counter of KiBot.
+  # This will change in the future.
+  run_drc: true
+  # [boolean=false] Runs the ERC (Electrical Rules Check). To ensure the schematic is electrically correct.
+  # The report file name is controlled by the global output pattern (%i=erc %x=txt).
+  #  run_erc: false
+  filters:
+    - filter: 'We know some connectors extend outside the board'
+      error: 'silk_over_copper'
+      regex: 'clipped by solder mask'
+    - filter: 'For some reason kibot shows this warning, but kicad doesnt.'
+      error: 'track_dangling'
+      regex: 'Track has unconnected end'
+  set_text_variables:
+    # The revision will be the short git hash
+    # We use ${git_hash} for the REV field in the worksheet (frame)
+    - name: 'git_hash'
+      command: 'git log -1 --format="%h" $KIBOT_PCB_NAME'
+      before: 'Git:'
+    # Coherent date and time for the schematic and PCB
+    # This will be the time stamp of the files generation, not the commit times
+    # We use `${date}` for the time field in the worksheet (frame)
+    - name: 'date'
+      command: 'date --iso-8601=minutes'
+
+outputs:
+  - name: basic_diff_pcb
+    comment: PCB diff between the last two changes
+    type: diff
+    dir: diff
+    layers: 'all'
+    options:
+      old: KIBOT_LAST-1
+      old_type: git
+      new: HEAD
+      new_type: git
+      cache_dir: /work/.cache
+      add_link_id: true
+
+  - name: basic_diff_sch
+    comment: Schematic diff between the last two changes
+    type: diff
+    dir: diff
+    options:
+      old: KIBOT_LAST-1
+      old_type: git
+      new: HEAD
+      new_type: git
+      cache_dir: /kikit/.cache
+      add_link_id: true
+      pcb: false
+
+  - name: basic_pcb_print_pdf
+    comment: PCB
+    type: pcb_print
+    dir: PCB/PDF
+    options:
+      format: PDF
+      scaling: 0
+      autoscale_margin_x: 50
+      autoscale_margin_y: 25
+      output: '%f%v-PCB.%x'
+      keep_temporal_files: true
+      plot_sheet_reference: false
+      pages:
+        - layers:
+            - layer: F.Silkscreen
+            - layer: Edge.Cuts
+          sheet: Silk
+        - layers:
+            - layer: User.Drawings
+            - layer: Edge.Cuts
+          sheet: Drawings
+        - layers:
+            - layer: F.Cu
+            - layer: F.Mask
+              color: '#14332440'
+            - layer: F.Paste
+            - layer: F.Silkscreen
+            - layer: Edge.Cuts
+          sheet: Front copper
+        - layers:
+            - layer: B.Cu
+            - layer: B.Mask
+              color: '#14332440'
+            - layer: Edge.Cuts
+          mirror: true
+          sheet: Bottom copper
+  - name: basic_pdf_sch_print
+    comment: Schematic in PDF format
+    type: pdf_sch_print
+    dir: Schematic
