@@ -1,4 +1,4 @@
-name: Generate Gerber files
+name: Test and Diff
 
 on:
   push:
@@ -20,8 +20,6 @@ on:
         required: false
         default: 'Manual test run'
 
-
-
 jobs:
   on_commit:
     runs-on: ubuntu-latest
@@ -31,6 +29,7 @@ jobs:
         with:
           config: kibot-quick.yaml
           dir: output
+          verbose: 1
           schema: 'kicad/mk2/srvant-mk2/srvant-mk2.kicad_sch'
           board: 'kicad/mk2/srvant-mk2/srvant-mk2.kicad_pcb'
       - name: upload results
