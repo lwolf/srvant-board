@@ -57,19 +57,19 @@ outputs:
 #      add_link_id: true
 #      pcb: true
 
-  - name: basic_diff_sch
-    comment: Schematic diff between the last two changes
-    type: diff
-    dir: diff
-    options:
-      diff_mode: 'red_green'
-      old: KIBOT_LAST-1
-      old_type: git
-      new: HEAD
-      new_type: git
-      add_link_id: true
-      pcb: false
-
+#  - name: basic_diff_sch
+#    comment: Schematic diff between the last two changes
+#    type: diff
+#    dir: diff
+#    options:
+#      diff_mode: 'red_green'
+#      old: KIBOT_LAST-1
+#      old_type: git
+#      new: HEAD
+#      new_type: git
+#      add_link_id: true
+#      pcb: false
+#
   - name: basic_pcb_print_pdf
     comment: PCB
     type: pcb_print
