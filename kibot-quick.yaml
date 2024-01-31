@@ -43,29 +43,30 @@ preflight:
       command: 'date --iso-8601=minutes'
 
 outputs:
-  - name: basic_diff_pcb
-    comment: PCB diff between the last two changes
-    type: diff
-    dir: diff
-    layers: 'all'
-    options:
-      old: KIBOT_LAST-1
-      old_type: git
-      new: HEAD
-      new_type: git
-      cache_dir: /work/.cache
-      add_link_id: true
+#  - name: basic_diff_pcb
+#    comment: PCB diff between the last two changes
+#    type: diff
+#    dir: diff
+#    layers: 'all'
+#    options:
+#      diff_mode: 'red_green'
+#      old: KIBOT_LAST-1
+#      old_type: git
+#      new: HEAD
+#      new_type: git
+#      add_link_id: true
+#      pcb: true
 
   - name: basic_diff_sch
     comment: Schematic diff between the last two changes
     type: diff
     dir: diff
     options:
+      diff_mode: 'red_green'
       old: KIBOT_LAST-1
       old_type: git
       new: HEAD
       new_type: git
-      cache_dir: /kikit/.cache
       add_link_id: true
       pcb: false
 
