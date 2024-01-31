@@ -6,13 +6,13 @@ on:
       - 'kicad/mk2/srvant-mk2/*.kicad_sch'
       - 'kicad/mk2/srvant-mk2/*.kicad_pcb'
       - '.github/**.yml'
-      - 'kibot-test.yaml'
+      - 'kibot-quick.yaml'
   pull_request:
     paths:
       - 'kicad/mk2/srvant-mk2/*.kicad_sch'
       - 'kicad/mk2/srvant-mk2/*.kicad_pcb'
       - '.github/**.yml'
-      - 'kibot-test.yaml'
+      - 'kibot-quick.yaml'
   workflow_dispatch:
     inputs:
       name:
@@ -29,7 +29,7 @@ jobs:
         with:
           config: kibot-quick.yaml
           dir: output
-          verbose: 1
+          verbose: 2
           schema: 'kicad/mk2/srvant-mk2/srvant-mk2.kicad_sch'
           board: 'kicad/mk2/srvant-mk2/srvant-mk2.kicad_pcb'
       - name: upload results
