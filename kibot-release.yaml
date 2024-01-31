@@ -55,31 +55,31 @@ preflight:
     - name: MK2_3D_MODELS
       text: './kicad/mk2/srvant-mk2/3D'
 outputs:
-  - name: basic_diff_pcb
-    comment: PCB diff between the last two changes
-    type: diff
-    dir: diff
-    layers: 'all'
-    options:
-      old: KIBOT_TAG-1
-      old_type: git
-      new: HEAD
-      new_type: git
-      cache_dir: /work/.cache
-      add_link_id: true
-
-  - name: basic_diff_sch
-    comment: Schematic diff between the last two changes
-    type: diff
-    dir: diff
-    options:
-      old: KIBOT_TAG-1
-      old_type: git
-      new: HEAD
-      new_type: git
-      cache_dir: /kikit/.cache
-      add_link_id: true
-      pcb: false
+#  - name: basic_diff_pcb
+#    comment: PCB diff between the last two changes
+#    type: diff
+#    dir: diff
+#    layers: 'all'
+#    options:
+#      old: KIBOT_TAG-1
+#      old_type: git
+#      new: HEAD
+#      new_type: git
+#      cache_dir: /work/.cache
+#      add_link_id: true
+#
+#  - name: basic_diff_sch
+#    comment: Schematic diff between the last two changes
+#    type: diff
+#    dir: diff
+#    options:
+#      old: KIBOT_TAG-1
+#      old_type: git
+#      new: HEAD
+#      new_type: git
+#      cache_dir: /kikit/.cache
+#      add_link_id: true
+#      pcb: false
 
 # TODO: choose prefered BOM mode, and remove others
   - name: basic_boardview
