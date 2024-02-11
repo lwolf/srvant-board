@@ -43,9 +43,14 @@ preflight:
   set_text_variables:
     # The revision will be the short git hash
     # We use ${git_hash} for the REV field in the worksheet (frame)
-    - name: 'git_hash'
+    - name: 'Comment1'
+      variable: 'Comment1'
+      expand_kibot_patterns: true
       command: 'git log -1 --format="%h" $KIBOT_PCB_NAME'
-      before: 'Git:'
+    - name: "REV"
+      variable: "REV"
+      expand_kibot_patterns: true
+      command: 'git log -1 --format="%h" $KIBOT_SCH_NAME'
     # Coherent date and time for the schematic and PCB
     # This will be the time stamp of the files generation, not the commit times
     # We use `${date}` for the time field in the worksheet (frame)

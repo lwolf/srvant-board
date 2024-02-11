@@ -4,6 +4,11 @@
 
   (paper "A3")
 
+  (title_block
+    (title "srvant mk2")
+    (rev "${git_hash}")
+  )
+
   (lib_symbols
     (symbol "ARJM11:TestPoint" (pin_numbers hide) (pin_names (offset 0.762) hide) (in_bom yes) (on_board yes)
       (property "Reference" "TP" (at 0 6.858 0)
