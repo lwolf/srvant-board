@@ -402,8 +402,9 @@
 			(xy 102.87 76.2) (xy 102.87 93.98)
 		)
 		(stroke
-			(width 0)
+			(width 1)
 			(type default)
+			(color 73 152 255 1)
 		)
 		(uuid "07b585b0-d861-4ff7-a33a-d6329257e646")
 	)
@@ -436,6 +437,17 @@
 			(type default)
 		)
 		(uuid "2b3e906e-88df-4cc4-b47d-7debaf4a690d")
+	)
+	(wire
+		(pts
+			(xy 102.87 76.2) (xy 285.75 76.2)
+		)
+		(stroke
+			(width 1)
+			(type default)
+			(color 73 152 255 1)
+		)
+		(uuid "2fb3e6c8-bd82-402d-8681-1f4f3c27ab64")
 	)
 	(wire
 		(pts
@@ -490,6 +502,17 @@
 	)
 	(wire
 		(pts
+			(xy 285.75 76.2) (xy 285.75 95.25)
+		)
+		(stroke
+			(width 1)
+			(type default)
+			(color 73 152 255 1)
+		)
+		(uuid "6d342774-e620-431d-98a4-787327a3300c")
+	)
+	(wire
+		(pts
 			(xy 127 119.38) (xy 262.89 119.38)
 		)
 		(stroke
@@ -523,8 +546,9 @@
 			(xy 102.87 63.5) (xy 102.87 76.2)
 		)
 		(stroke
-			(width 0)
+			(width 1)
 			(type default)
+			(color 73 152 255 1)
 		)
 		(uuid "7e635d2f-4678-4184-a78a-f8958c18be81")
 	)
@@ -533,8 +557,9 @@
 			(xy 48.26 76.2) (xy 102.87 76.2)
 		)
 		(stroke
-			(width 0)
+			(width 1)
 			(type default)
+			(color 73 152 255 1)
 		)
 		(uuid "814fc218-1521-4d77-8d07-e15d653fe814")
 	)
@@ -641,16 +666,6 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 95.25) (xy 309.88 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c49dbb92-c34e-42ac-81d8-ec4cd4b68bed")
-	)
-	(wire
-		(pts
 			(xy 307.34 95.25) (xy 307.34 34.29)
 		)
 		(stroke
@@ -674,20 +689,11 @@
 			(xy 48.26 95.25) (xy 48.26 76.2)
 		)
 		(stroke
-			(width 0)
+			(width 1)
 			(type default)
+			(color 73 152 255 1)
 		)
 		(uuid "e4a5832e-c610-400c-9f7b-42562ee784a4")
-	)
-	(wire
-		(pts
-			(xy 309.88 31.75) (xy 111.76 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e625012d-4713-4cdd-93e0-ce133469f251")
 	)
 	(wire
 		(pts
@@ -741,6 +747,17 @@
 			(justify left bottom)
 		)
 		(uuid "53222165-a282-4d27-ac3d-1f7226862630")
+	)
+	(text "Do i need 2 pins for the HOST_RUN_PG? should it be a single one?"
+		(exclude_from_sim no)
+		(at 154.686 149.606 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6d7d3c63-6742-4672-bff8-b6022409a7f2")
 	)
 	(text "add additional UART connection for yet unknown purposes"
 		(exclude_from_sim no)
@@ -1562,16 +1579,6 @@
 			)
 			(uuid "f08d011c-ac29-4796-ad6f-9c4f940918fc")
 		)
-		(pin "+3.3v_HOST_PCIe" input
-			(at 309.88 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "c3933126-974f-481d-bbd4-dbe097058909")
-		)
 		(pin "+5v_HOST_HDMI" input
 			(at 307.34 95.25 90)
 			(effects
@@ -1611,6 +1618,16 @@
 				(justify left)
 			)
 			(uuid "1d72db70-bd19-47a7-81df-b14566d7fdcf")
+		)
+		(pin "+3v3_AUX" input
+			(at 285.75 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "1c950621-ec89-4d9a-9cc5-a8f0aae0673b")
 		)
 		(instances
 			(project "srvant-mk2"
@@ -1769,16 +1786,6 @@
 			)
 			(uuid "c24417ce-1c9d-4afb-b45a-213f834a0e88")
 		)
-		(pin "+3.3v_BMC" output
-			(at 102.87 93.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "51b1e0c8-b51f-4f0f-8ae2-457ee788e7aa")
-		)
 		(pin "BMC_HOST_BT_nDis" input
 			(at 127 133.35 0)
 			(effects
@@ -1869,6 +1876,16 @@
 			)
 			(uuid "f49aa0fe-2ad1-42c6-a0f3-e65e1ac8bbe7")
 		)
+		(pin "+3v3_AUX" output
+			(at 102.87 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "5f79a696-3a41-4bf9-bfa9-49befd3632f8")
+		)
 		(instances
 			(project "srvant-mk2"
 				(path "/1859a578-b791-4142-bdf4-fda494df1146"
@@ -1927,16 +1944,6 @@
 			)
 			(uuid "fa999007-905b-42cb-8c50-25a44464dcc9")
 		)
-		(pin "+3.3v_BMC" input
-			(at 102.87 63.5 270)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "9cc7000b-4ab5-4f36-b89f-7c586a95a20c")
-		)
 		(pin "BMC_I2C_0_SCK" input
 			(at 91.44 63.5 270)
 			(effects
@@ -1987,15 +1994,15 @@
 			)
 			(uuid "f8e365a4-b766-4dea-8f4e-7527b43fff69")
 		)
-		(pin "+3.3v_HOST_PCIe" output
-			(at 111.76 31.75 0)
+		(pin "+3v3_AUX" input
+			(at 102.87 63.5 270)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
-			(uuid "e7837c3c-f8dc-4851-a3d5-32a8cf0ce536")
+			(uuid "bbbcb1b8-ddc3-45af-8c6d-96ee295130c1")
 		)
 		(instances
 			(project "srvant-mk2"
@@ -2035,7 +2042,7 @@
 				(justify left top)
 			)
 		)
-		(pin "+3.3v_BMC" output
+		(pin "+3v3_AUX" output
 			(at 48.26 95.25 90)
 			(effects
 				(font
@@ -2043,7 +2050,7 @@
 				)
 				(justify right)
 			)
-			(uuid "fad9b19e-f2d9-417a-8aad-2e9f9aa76829")
+			(uuid "cefa82e0-dd9f-4b39-aa5d-c546f9ac3977")
 		)
 		(instances
 			(project "srvant-mk2"

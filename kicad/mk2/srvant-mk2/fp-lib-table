@@ -9,4 +9,5 @@
   (lib (name "74LVC32APW")(type "KiCad")(uri "${KIPRJMOD}/footprints/74LVC32APW.pretty")(options "")(descr ""))
   (lib (name "QFN32_SLB9670VQ20FW785XTMA1_INF")(type "KiCad")(uri "${KIPRJMOD}/footprints/QFN32_SLB9670VQ20FW785XTMA1_INF.pretty")(options "")(descr ""))
   (lib (name "button-1571563-4")(type "KiCad")(uri "${KIPRJMOD}/footprints/button-1571563-4.pretty")(options "")(descr ""))
+  (lib (name "DMP3098L")(type "KiCad")(uri "${KIPRJMOD}/footprints/DMP3098L.pretty")(options "")(descr ""))
 )
