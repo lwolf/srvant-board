@@ -8616,6 +8616,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 93.98) (xy 195.58 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "706dcd3e-1656-4592-b52a-fcf45cb39aa0")
+	)
+	(wire
+		(pts
 			(xy 182.88 85.09) (xy 195.58 85.09)
 		)
 		(stroke
@@ -8686,7 +8696,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 93.98) (xy 195.58 93.98)
+			(xy 172.72 93.98) (xy 177.8 93.98)
 		)
 		(stroke
 			(width 0)
@@ -20379,6 +20389,75 @@
 			(project "srvant"
 				(path "/556fa623-1b37-4e79-bae4-da8a8b5c51e2/e09acda0-94a3-4a08-aefe-d9a65d235818/4ef40d64-4bce-4f26-8bb0-6b5010a92d45"
 					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 181.61 93.98 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "9d771f78-3329-4dc2-88ab-32c7c3534aaa")
+		(property "Reference" "JP4"
+			(at 184.404 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 182.88 94.996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 181.61 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 181.61 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 181.61 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "77c058c6-cb51-4fc4-8efd-db10a47ea602")
+		)
+		(pin "2"
+			(uuid "47bd05f6-9d66-4539-96ca-0c9a25985471")
+		)
+		(instances
+			(project "srvant-mk2"
+				(path "/1859a578-b791-4142-bdf4-fda494df1146/a3ddce6d-c94c-48a5-9fee-a70fbee730bf"
+					(reference "JP4")
 					(unit 1)
 				)
 			)
