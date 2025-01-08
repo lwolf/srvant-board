@@ -11,5 +11,5 @@ docker run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY \
     --volume="/home/$USER/.cache/kicad:/home/$USER/.cache/kicad:rw" \
     --volume="/etc/passwd:/etc/passwd:ro" \
     --volume="/etc/shadow:/etc/shadow:ro" \
-    ghcr.io/inti-cmnb/kicad7_auto:1.6.1 /bin/bash -c \
+    ghcr.io/inti-cmnb/kicad8_auto:1.8.1 /bin/bash -c \
     "kibot -c kibot-quick.yaml -b kicad/mk2/srvant-mk2/srvant-mk2.kicad_pcb -v"
