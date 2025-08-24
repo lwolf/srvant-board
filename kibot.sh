@@ -1,7 +1,7 @@
 #!/bin/env bash
 export USER_ID=$(id -u)
 export GROUP_ID=$(id -g)
-docker run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY \
+nerdctl run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY \
     -v $(pwd):/home/$USER/workdir \
     --user $USER_ID:$GROUP_ID \
     --env NO_AT_BRIDGE=1 \
