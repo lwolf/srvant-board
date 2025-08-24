@@ -1,0 +1,27 @@
+name: Manual 3D and STEP Generation
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Workflow run name'
+        required: false
+        default: 'Manual 3D/STEP run'
+
+jobs:
+  on_commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: INTI-CMNB/KiBot@v2_k8
+        with:
+          config: kibot-3d.yaml
+          dir: output
+          verbose: 2
+          schema: 'kicad/mk2/srvant-mk2/srvant-mk2.kicad_sch'
+          board: 'kicad/mk2/srvant-mk2/srvant-mk2.kicad_pcb'
+      - name: upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: output
+          path: output

@@ -17,6 +17,13 @@ act: check_deps
 	@mkdir -p .artifacts
 	act -j $(JOB) --artifact-server-path .artifacts
 
+
+# Run the 3D workflow
+.PHONY: act-3d
+act-3d:
+	@mkdir -p .artifacts
+	act -j on_commit --artifact-server-path .artifacts -W .github/workflows/kibot-3d.yml
+
 # Clean up artifacts
 .PHONY: clean
 clean:
@@ -29,6 +36,7 @@ help:
 	@echo "Usage: make [target]"
 	@echo "Targets:"
 	@echo "  act [JOB=job_name]  - Run a specific GitHub Actions job (default: on_commit)."
+	@echo "  act-3d              - Run the 3D and STEP generation workflow."
 	@echo "  clean               - Remove the .artifacts directory."
 	@echo "  check_deps          - Check for required dependencies (docker, act)."
 	@echo "  help                - Show this help message."
