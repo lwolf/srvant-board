@@ -15,7 +15,7 @@ check_deps:
 .PHONY: act
 act: check_deps
 	@mkdir -p .artifacts
-	act -j $(JOB) --artifact-server-path .artifacts
+	act -j $(JOB) --artifact-server-path .artifacts -W .github/workflows/kibot-quick.yml
 
 
 # Run the 3D workflow
