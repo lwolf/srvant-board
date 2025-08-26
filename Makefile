@@ -24,6 +24,20 @@ act-3d:
 	@mkdir -p .artifacts
 	act -j on_commit --artifact-server-path .artifacts -W .github/workflows/kibot-3d.yml
 
+# Run the diff workflow with specific commits
+.PHONY: act-diff
+act-diff:
+	@if [ -z "$(OLD_COMMIT)" ] || [ -z "$(NEW_COMMIT)" ]; then \
+		echo "Error: OLD_COMMIT and NEW_COMMIT must be set."; \
+		exit 1; \
+	fi
+	@mkdir -p .artifacts
+	@sed -i "s/old: .*/old: $(OLD_COMMIT)/" kibot-quick.yaml
+	@sed -i "s/new: .*/new: $(NEW_COMMIT)/" kibot-quick.yaml
+	act -j on_commit --artifact-server-path .artifacts -W .github/workflows/kibot-quick.yml
+	@git checkout kibot-quick.yaml
+
+
 # Clean up artifacts
 .PHONY: clean
 clean:
@@ -37,6 +51,7 @@ help:
 	@echo "Targets:"
 	@echo "  act [JOB=job_name]  - Run a specific GitHub Actions job (default: on_commit)."
 	@echo "  act-3d              - Run the 3D and STEP generation workflow."
+	@echo "  act-diff OLD_COMMIT=<hash> NEW_COMMIT=<hash> - Run the diff workflow between two commits."
 	@echo "  clean               - Remove the .artifacts directory."
 	@echo "  check_deps          - Check for required dependencies (docker, act)."
 	@echo "  help                - Show this help message."
