@@ -37,6 +37,11 @@ act-diff:
 	act -j on_commit --artifact-server-path .artifacts -W .github/workflows/kibot-quick.yml
 	@git checkout kibot-quick.yaml
 
+# Run the release workflow
+.PHONY: act-release
+act-release:
+	@mkdir -p .artifacts
+	act -j release --artifact-server-path .artifacts -W .github/workflows/kibot-full.yml
 
 # Clean up artifacts
 .PHONY: clean
@@ -52,7 +57,9 @@ help:
 	@echo "  act [JOB=job_name]  - Run a specific GitHub Actions job (default: on_commit)."
 	@echo "  act-3d              - Run the 3D and STEP generation workflow."
 	@echo "  act-diff OLD_COMMIT=<hash> NEW_COMMIT=<hash> - Run the diff workflow between two commits."
+	@echo "  act-release         - Run the release workflow."
 	@echo "  clean               - Remove the .artifacts directory."
 	@echo "  check_deps          - Check for required dependencies (docker, act)."
 	@echo "  help                - Show this help message."
+
 

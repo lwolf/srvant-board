@@ -20,7 +20,7 @@ jobs:
         with:
           config: kibot-release.yaml
           dir: output
-          verbose: 1
+          verbose: 0
           schema: 'kicad/mk2/srvant-mk2/srvant-mk2.kicad_sch'
           board: 'kicad/mk2/srvant-mk2/srvant-mk2.kicad_pcb'
       - name: upload results

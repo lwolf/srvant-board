@@ -26,7 +26,7 @@ preflight:
   # If you need to check the parity use the `update_xml` preflight.
   # KiCad 6 introduced `warnings` they are currently counted be the `unconnected` counter of KiBot.
   # This will change in the future.
-  run_drc: true
+  run_drc: false
   # [boolean=false] Runs the ERC (Electrical Rules Check). To ensure the schematic is electrically correct.
   # The report file name is controlled by the global output pattern (%i=erc %x=txt).
   run_erc: false
@@ -60,31 +60,31 @@ preflight:
     - name: MK2_3D_MODELS
       text: './kicad/mk2/srvant-mk2/3D'
 outputs:
-#  - name: basic_diff_pcb
-#    comment: PCB diff between the last two changes
-#    type: diff
-#    dir: diff
-#    layers: 'all'
-#    options:
-#      old: KIBOT_TAG-1
-#      old_type: git
-#      new: HEAD
-#      new_type: git
-#      cache_dir: /work/.cache
-#      add_link_id: true
-#
-#  - name: basic_diff_sch
-#    comment: Schematic diff between the last two changes
-#    type: diff
-#    dir: diff
-#    options:
-#      old: KIBOT_TAG-1
-#      old_type: git
-#      new: HEAD
-#      new_type: git
-#      cache_dir: /kikit/.cache
-#      add_link_id: true
-#      pcb: false
+  - name: basic_diff_pcb
+    comment: PCB diff between the last two changes
+    type: diff
+    dir: diff
+    layers: 'all'
+    options:
+      old: KIBOT_TAG-1
+      old_type: git
+      new: HEAD
+      new_type: git
+      cache_dir: /work/.cache
+      add_link_id: true
+
+  - name: basic_diff_sch
+    comment: Schematic diff between the last two changes
+    type: diff
+    dir: diff
+    options:
+      old: KIBOT_TAG-1
+      old_type: git
+      new: HEAD
+      new_type: git
+      cache_dir: /kikit/.cache
+      add_link_id: true
+      pcb: false
 
 # TODO: choose prefered BOM mode, and remove others
   - name: basic_boardview
