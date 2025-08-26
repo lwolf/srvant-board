@@ -1,0 +1,21 @@
+name: KiCost
+
+on:
+  workflow_dispatch:
+
+jobs:
+  kibot:
+    runs-on: ubuntu-latest
+    env:
+      MOUSER_KEY: ${{ secrets.MOUSER_KEY }}
+      ELEMENT14_KEY: ${{ secrets.ELEMENT14_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: INTI-CMNB/KiBot@v2_k9
+        with:
+          config: kibot-kicost.yaml
+          schema: 'kicad/mk2/srvant-mk2/srvant-mk2.kicad_sch'
+          board: 'kicad/mk2/srvant-mk2/srvant-mk2.kicad_pcb'
+          verbose: 1

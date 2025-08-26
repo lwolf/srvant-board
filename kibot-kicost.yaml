@@ -1,0 +1,41 @@
+kibot:
+  version: 1
+
+global:
+  # Dir for the output files
+  output: output/%f-%r
+
+preflight:
+  # ERC, DRC
+  run_erc: false
+  run_drc: false
+  check_zone_fills: false
+  update_xml: true
+
+outputs:
+  # Generate a BOM for KiCost
+  - name: 'bom_for_kicost'
+    type: 'bom'
+    options:
+      output: '%f-%r.xml'
+      format: 'XML'
+      # Use the KiCad part name when no manf# is available
+      use_alt: true
+      # We need the following fields for KiCost
+      columns:
+        - 'Value'
+        - 'Footprint'
+        - 'manf#'
+        - 'digikey#'
+        - 'mouser#'
+        - 'farnell#'
+
+  # Run KiCost
+  - name: 'kicost'
+    type: 'kicost'
+    options:
+      # We want to use Digi-Key and Mouser
+      distributors: ['farnell', 'mouser']
+      currency: 'GBP'
+      # We want a spreadsheet as output
+      output: '%f-%r-kicost.xlsx'

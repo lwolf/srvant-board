@@ -3,6 +3,7 @@
 
 # Default job to run
 JOB ?= on_commit
+ACT_ENV ?=
 
 # Check for dependencies
 .PHONY: check_deps
@@ -43,6 +44,15 @@ act-release:
 	@mkdir -p .artifacts
 	act -j release --artifact-server-path .artifacts -W .github/workflows/kibot-full.yml
 
+# Run the kicost workflow
+.PHONY: act-kicost
+act-kicost:
+	@mkdir -p .artifacts
+	@if [ -f .env ]; then . ./.env; fi
+	@$(ACT_ENV) act --artifact-server-path .artifacts -W .github/workflows/kicost.yml \
+		-s KICOST_MOUSER_KEY=$(KICOST_MOUSER_KEY) \
+		-s KICOST_FARNELL_KEY=$(KICOST_FARNELL_KEY)
+
 # Clean up artifacts
 .PHONY: clean
 clean:
@@ -58,6 +68,7 @@ help:
 	@echo "  act-3d              - Run the 3D and STEP generation workflow."
 	@echo "  act-diff OLD_COMMIT=<hash> NEW_COMMIT=<hash> - Run the diff workflow between two commits."
 	@echo "  act-release         - Run the release workflow."
+	@echo "  act-kicost          - Run the KiCost workflow. Environment variables like KICOST_MOUSER_KEY and KICOST_FARNELL_KEY can be passed directly (e.g., KICOST_MOUSER_KEY=your_key make act-kicost)."
 	@echo "  clean               - Remove the .artifacts directory."
 	@echo "  check_deps          - Check for required dependencies (docker, act)."
 	@echo "  help                - Show this help message."

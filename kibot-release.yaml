@@ -443,9 +443,9 @@ outputs:
       # Same result as using the mouse wheel in the 3D viewer
       zoom: 0
 
-  - name: basic_step
+  - name: basic_export_3d
     comment: 'Exports the PCB as a 3D model.'
-    type: step
+    type: export_3d
     dir: 3D
     options:
       # [string|list(string)='_none'] Name of the filter to mark components as not fitted.
