@@ -37,5 +37,6 @@ outputs:
       # We want to use Digi-Key and Mouser
       distributors: ['farnell', 'mouser']
       currency: 'GBP'
+      ignore_fields: ['field4','field5', 'field6', 'field7', 'field8']
       # We want a spreadsheet as output
       output: '%f-%r-kicost.xlsx'

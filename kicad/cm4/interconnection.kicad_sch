@@ -1,0 +1,32 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 6fad0f66-8921-4f5c-93a5-e5165a7bd032)
+
+  (paper "A3")
+
+  (title_block
+    (title "srvant mk2")
+    (rev "0.1")
+  )
+
+  (lib_symbols
+  )
+
+
+  (hierarchical_label "BMC_HOST_POST_COMPLETE" (shape input) (at 118.11 166.37 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 2e6acd9c-742d-497d-850c-93e285090c53)
+  )
+  (hierarchical_label "BMC_HOST_POWER_OUT" (shape input) (at 118.11 163.83 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 5f56a340-f6f9-4bee-b533-8ec9fab9add2)
+  )
+  (hierarchical_label "BMC_HOST_RESET_OUT" (shape input) (at 118.11 161.29 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 87f08c64-44a9-4c3e-b477-fe4636a7ba81)
+  )
+  (hierarchical_label "BMC_HOST_nRPIBOOT" (shape input) (at 118.11 158.75 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid ef3dd7eb-ec41-462a-be4c-a7b53620abb4)
+  )
+)
