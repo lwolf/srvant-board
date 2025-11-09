@@ -1,0 +1,4 @@
+# We know some connectors extend outside the board
+silk_over_copper,clipped by solder mask
+# For some reason kibot shows this warning, but kicad doesnt.
+track_dangling,Track has unconnected end
